@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="JavaFXBusy">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/JavaFXBusy.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
