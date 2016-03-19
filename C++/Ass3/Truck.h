@@ -2,6 +2,7 @@
 #define TRUCK_H_
 
 #include "Car.h"
+using namespace std;
 
 class Truck : public Car
 {

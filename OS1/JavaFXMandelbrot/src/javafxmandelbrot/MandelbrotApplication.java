@@ -23,7 +23,7 @@ import javafx.stage.Stage;
  */
 public class MandelbrotApplication extends Application implements EventHandler<ActionEvent> {
 
-    final static int X_PIXEL = 630; // change this value if you have a slow (or fast...) laptop
+    final static int X_PIXEL = 200; // change this value if you have a slow (or fast...) laptop
     final static int Y_PIXEL = X_PIXEL;
     final static int XY_SIZE = X_PIXEL * Y_PIXEL;
     final static double STEP = 2.3 / X_PIXEL;
@@ -36,7 +36,7 @@ public class MandelbrotApplication extends Application implements EventHandler<A
     private GraphicsContext gc;
     private PixelManager pixelManager;
     private TileFactory tileFactory;
-
+    private Thread t;
     @Override
     public void start(Stage primaryStage) {
         btnStart = new Button("start");
@@ -75,8 +75,8 @@ public class MandelbrotApplication extends Application implements EventHandler<A
 
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
-        
-        sim();
+        ThreadOverview threadOverview = new ThreadOverview();
+        //sim();
     }
 
     private void initCanvas() {
@@ -126,7 +126,7 @@ public class MandelbrotApplication extends Application implements EventHandler<A
         } else if (t.getSource() == btnClear) {
             initCanvas();
         } else if (t.getSource() == btnSim) {
-            sim();
+            //sim();
         } else {
             System.out.println("unknown event: " + t.toString());
         }
@@ -138,7 +138,6 @@ public class MandelbrotApplication extends Application implements EventHandler<A
 
     private void startThreads() {
         int nrofTiles;
-
         pixelManager = new PixelManager(gc, XY_SIZE);
         initCanvas();
 
@@ -149,9 +148,9 @@ public class MandelbrotApplication extends Application implements EventHandler<A
             for (int j = 0; j < nrofTiles; j++) {
                 Tile tile = tileFactory.createTile(i, j);
                 Mandelbrot m = new Mandelbrot(tile, pixelManager);
-                
-                // TODO: starting threads...
                 m.calculate();
+                t = new Thread(m);
+                t.start();
             }
         }
     }

@@ -6,7 +6,7 @@ import javafx.scene.paint.Color;
  *
  * @author Joris
  */
-public class Mandelbrot {
+public class Mandelbrot implements Runnable{
 
     private final static int RED = 5;       // nrof bits for each color
     private final static int GREEN = 5;
@@ -72,5 +72,10 @@ public class Mandelbrot {
             }
         }
         pm.show();
+    }
+
+    @Override
+    public void run() {
+        calculate();
     }
 }

@@ -19,7 +19,6 @@
 
 uint8_t speed = 0x00;
 uint8_t weight = 0x00;
-
 int error, transferred;
 libusb_device_handle *h;
 
@@ -41,11 +40,6 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	// if ((error = libusb_interrupt_transfer(h, endpIn, led, sizeof led, &transferred, 0)) != 0)
-	// 	{
-	// 		fprintf(stderr, "Transfer failed: off led", error);
-	// 	}
-
 	while(1)
 	{
 		if ((error = libusb_interrupt_transfer(h, endpOut, dataOut, sizeof dataOut, &transferred, 0)) != 0)
@@ -53,21 +47,11 @@ int main(int argc, char *argv[])
 			fprintf(stderr, "Transfer failed: reading", error);
 		}
 		
-		check(dataOut);
-
-		if ((dataOut[2])&one)
-	{
-		printf("D-pad Up was pressed");	
-		unsigned char led[] = {1,2,ledOne};
-		if ((error = libusb_interrupt_transfer(h, endpIn, led, sizeof led, &transferred, 0)) != 0)
-		{
-			fprintf(stderr, "Transfer failed: led1", error);
-		}		
-	}
+		printf("Button pressed : %s\n",check(dataOut));
 		
 		unsigned char led[] = {1,2,0x00};
 		
-		// ledChange(dataOut);
+		ledChange(dataOut);
 		rumble(dataOut);
 		
 	}
@@ -99,8 +83,7 @@ void rumble(uint8_t *dataOut)
 void ledChange(uint8_t *dataOut)
 {
 	if ((dataOut[2])&one)
-	{
-		printf("D-pad Up was pressed");	
+	{		
 		unsigned char led[] = {1,2,ledOne};
 		if ((error = libusb_interrupt_transfer(h, endpIn, led, sizeof led, &transferred, 0)) != 0)
 		{
@@ -109,7 +92,6 @@ void ledChange(uint8_t *dataOut)
 	}
 	else if ((dataOut[2]>>1)&one)
 	{
-		printf("D-pad Down was pressed");
 		unsigned char led[] = {1,2,ledTwo};
 		if ((error = libusb_interrupt_transfer(h, endpIn, led, sizeof led, &transferred, 0)) != 0)
 		{
@@ -118,8 +100,6 @@ void ledChange(uint8_t *dataOut)
 	}
 	else if ((dataOut[2]>>2)&one)
 	{
-		printf("D-pad Left was pressed");
-		printf("D-pad Up was pressed");	
 		unsigned char led[] = {1,2,ledThree};
 		if ((error = libusb_interrupt_transfer(h, endpIn, led, sizeof led, &transferred, 0)) != 0)
 		{
@@ -128,8 +108,6 @@ void ledChange(uint8_t *dataOut)
 	}
 	else if ((dataOut[2]>>3)&one)
 	{
-		printf("D-pad Right was pressed");
-		printf("D-pad Up was pressed");	
 		unsigned char led[] = {1,2,ledFour};
 		if ((error = libusb_interrupt_transfer(h, endpIn, led, sizeof led, &transferred, 0)) != 0)
 		{
@@ -137,7 +115,6 @@ void ledChange(uint8_t *dataOut)
 		}	
 	}
 	if(((dataOut[2]>>3)&one) || ((dataOut[2]>>2)&one) || ((dataOut[2])&one) || ((dataOut[2]>>1)&one)){
-		printf("all pressed");
 	}
 	else
 	{
@@ -149,71 +126,63 @@ void ledChange(uint8_t *dataOut)
 	}
 }
 
-void check(uint8_t *dataOut)
+char check(uint8_t *dataOut)
 {
+	char value;
 	printf("\n");
 	if (((dataOut[3]>>4)&one) )
 	{
-		printf("A was pressed");
+		return value = 'A';
 	}
 	else if ((dataOut[3]>>5)&one)
 	{
-		printf("B was pressed");
+		return value ='B';
 		exit(0);
 	}
 	else if ((dataOut[3]>>6)&one)
 	{
-		printf("X was pressed");
+		return value ='X';
 	}
 	else if ((dataOut[3]>>7)&one)
 	{
-		printf("Y was pressed");
+		return  value ='Y';
 	}
 	else if ((dataOut[3]>>1)&one)
 	{
-		printf("RB was pressed");
+		return value ="RB";
 	}
 	else if ((dataOut[3]>>0)&one)
 	{
-		printf("LB was pressed");
+		return value ="LB";
 	}
 	else if ((dataOut[2]>>4)&one)
 	{
-		printf("Start was pressed");
+		return value = "Start";
 	}
 	else if ((dataOut[2]>>5)&one)
 	{
-		printf("Back was pressed");
+		return value = "Back";
 	}
 	else if ((dataOut[3]>>2)&one)
 	{
-		printf("XBox button was pressed\n");
-		printf("Xbox off");
+		return value = "Xbox Button";
 
 	}
 	else if ((dataOut[5])> 0)
 	{
-		printf("RT was pressed");
+		return value = "Right Trigger";
 	}
 	else if ((dataOut[4])> 0)
 	{
-		printf("LT was pressed");
+		return value = "Left Trigger";
 	}
 	
 	else if ((dataOut[2]>>6)&one)
 	{
-		printf("Left Stick was pressed");
+		return value = "Left Stick";
 	}
 	else if ((dataOut[2]>>7)&one)
 	{
-		printf("Right stick was pressed");
+		return value = "Right Stick";
 	}
-	printf("\n");
 }
-// void exchange(libusb_device_handle *h, unsigned char endp, unsigned char data,int* transferred)
-// {
-	// if ((error = libusb_interrupt_transfer(h, endp, data, sizeof data, &transferred, 0)) != 0)
-	// 	{
-	// 		fprintf(stderr, "Transfer failed: out", error);
-	// 	}
-// }

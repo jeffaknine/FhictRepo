@@ -1,15 +1,10 @@
 #include "Car.h"
 #include <vector>
 #include <string>
+#include <iostream>
 
 using namespace std;
 
-
-private:
-
-	wheels = new vector<Wheel*>;
-	licensePlate = "";
-	model = "";
 	bool Car::indexInRange(int index)
 	{
 		if (wheels[index] != NULL)
@@ -19,9 +14,9 @@ private:
 		else return false;
 	}
 
-	void Car::deleteAllWheels();
+	void Car::deleteAllWheels()
 	{
-		for (int i = 0; i < wheels.size(); ++i)
+		for (unsigned int i = 0; i < wheels.size(); ++i)
 		{
 			delete wheels[i];
 			wheels[i] = NULL;
@@ -33,10 +28,17 @@ private:
 
 	}
 
-public:
-	Car::Car(const string& model, const string& material, int diameter, int nrWheels)
-	{
 
+	Car::Car(const string& mod, const string& material, int diameter, int nrWheels)
+	{
+		std::vector<Wheel*>;
+		licensePlate = "";
+		model = mod;
+		
+		for (int i = 0; i < nrWheels; ++i)
+		{
+			Wheel wheel(diameter,material);
+		}
 	}
 
 	Car:: virtual ~Car()
@@ -46,17 +48,26 @@ public:
 
 	void Car::setLicensePlate(const string& license)
 	{
-
+		licensePlate = license;
 	}
 
 	string Car::getLicensePlate() const
 	{
-
+		return licensePlate;
 	}
 
 	int Car::getNrWheels() const
 	{
-
+		int count = 0;
+		for (unsigned int i = 0; i < wheels.size(); ++i)
+		{
+			if (wheels[i] != NULL)
+			{
+				count = count + 1;
+			}
+			else break;
+		}
+		return count;
 	}
 
 	Wheel* Car::getWheel(int index)
@@ -66,13 +77,24 @@ public:
 
 	void Car::removeWheel(int index)
 	{
-
+		if (index >= 0 && index < wheels.size())
+		{
+			wheels.erase(wheels.begin() + index);
+		}
+		else
+		{
+			//throw out_of_range
+			cout << "illegal index" <<endl;
+		}
 	}
 
-	void Car::addWheel(int diameter, const std::string& material)
+	void Car::addWheel(int diameter, const string& material)
 	{
-
+		Wheel wheel(diameter,material);
 	}
 
-	Car::Car
+	Car& operator=(const Car& myCar)
+	{
+		
+	}
 
