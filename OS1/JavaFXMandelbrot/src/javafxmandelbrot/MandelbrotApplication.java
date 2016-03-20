@@ -23,7 +23,7 @@ import javafx.stage.Stage;
  */
 public class MandelbrotApplication extends Application implements EventHandler<ActionEvent> {
 
-    final static int X_PIXEL = 200; // change this value if you have a slow (or fast...) laptop
+    final static int X_PIXEL = 300; // change this value if you have a slow (or fast...) laptop
     final static int Y_PIXEL = X_PIXEL;
     final static int XY_SIZE = X_PIXEL * Y_PIXEL;
     final static double STEP = 2.3 / X_PIXEL;
@@ -76,7 +76,7 @@ public class MandelbrotApplication extends Application implements EventHandler<A
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
         ThreadOverview threadOverview = new ThreadOverview();
-        //sim();
+        sim();
     }
 
     private void initCanvas() {
@@ -126,7 +126,7 @@ public class MandelbrotApplication extends Application implements EventHandler<A
         } else if (t.getSource() == btnClear) {
             initCanvas();
         } else if (t.getSource() == btnSim) {
-            //sim();
+            sim();
         } else {
             System.out.println("unknown event: " + t.toString());
         }
@@ -134,6 +134,7 @@ public class MandelbrotApplication extends Application implements EventHandler<A
     
     private void stopThreads() {
         // TODO: stopping threads
+        t.interrupt();
     }
 
     private void startThreads() {

@@ -1,13 +1,228 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="943de35a-7f78-4ed0-ad3e-a33a4d7dbdc5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../C++/Ass3/ass3" afterPath="$PROJECT_DIR$/../../C++/Ass3/ass3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../C++/Ass3/Car.cpp" afterPath="$PROJECT_DIR$/../../C++/Ass3/Car.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../EMB1/xpadtest.c" afterPath="$PROJECT_DIR$/../../EMB1/xpadtest.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JavaFXBusy/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../JavaFXBusy/.idea/workspace.xml" />
+    <list default="true" id="6173b04a-c841-4da0-8615-210901f4ffd8" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/Ass1/EnhancedMeasurementSeries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/Ass1/EnhancedMeasurementSeriesTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/Ass1/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/Ass1/product/EnhancedMeasurementSeries.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/Ass1/product/EnhancedMeasurementSeries.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/Ass1/product/MeasurementSeries.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/Ass1/product/MeasurementSeries.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/Ass1/product/menu.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/Ass1/test/EnhancedMeasurementSeriesTest.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/Ass1/test/MeasurementSeriesTest.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/Ass1/test/triedWithClass.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/Ass1_Zaitcev_Aknine.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/Ass2_Zaitcev_Aknine.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/Ass3/Car.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/Ass3/Truck.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/Ass3/Wheel.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/Ass3/Wheel.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_1_PiggyBank/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_1_PiggyBank/PiggyBank" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_1_PiggyBank/PiggyBankTest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_1_PiggyBank/product/PiggyBank.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_1_PiggyBank/product/PiggyBank.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_1_PiggyBank/product/menu.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_1_PiggyBank/test/PiggyBankTest.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_2_StorablePiggyBank/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_2_StorablePiggyBank/StorablePiggyBank" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_2_StorablePiggyBank/product/PiggyBank.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_2_StorablePiggyBank/product/PiggyBank.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_2_StorablePiggyBank/product/StorablePiggyBank.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_2_StorablePiggyBank/product/StorablePiggyBank.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_2_StorablePiggyBank/product/menu.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_2_StorablePiggyBank/test/PiggyBankTest.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_2_StorablePiggyBank/test/StorablePiggyBankTest.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_3_Memory_Management/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_3_Memory_Management/product/Person.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_3_Memory_Management/product/Person.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_3_Memory_Management/product/Student.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_3_Memory_Management/product/Student.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_3_Memory_Management/product/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_4_Polymorphism/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_4_Polymorphism/product/Apple.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_4_Polymorphism/product/Apple.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_4_Polymorphism/product/Banana.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_4_Polymorphism/product/Banana.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_4_Polymorphism/product/Fruit.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_4_Polymorphism/product/Fruit.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_4_Polymorphism/product/Orange.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_4_Polymorphism/product/Orange.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_4_Polymorphism/product/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_6_Linked_Lists/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_6_Linked_Lists/product/Node.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_6_Linked_Lists/product/Node.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_6_Linked_Lists/product/NodeList.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_6_Linked_Lists/product/NodeList.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EMB1-C++_example_6_Linked_Lists/product/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EmptyProject/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EmptyProject/product/EmptyProject.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EmptyProject/product/EmptyProject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EmptyProject/product/menu.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../C++/ExampleProjects/EmptyProject/test/TestEmptyProject.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../EMB1/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../EMB1/a.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../EMB1/helloargv.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../EMB1/helloworld.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../EMB1/ncurses.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.~lock.Assignment Process Scheduling.odt#" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Ass2.1/Hello.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Ass2.1/Hello.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Ass2.1/hello.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../AssB/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../AssB/build/built-jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../AssB/build/classes/assb/AssB.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../AssB/build/classes/machines/HouseRobot.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../AssB/build/classes/people/Butler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../AssB/build/classes/people/Housekeeper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../AssB/build/classes/people/Person.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../AssB/dist/AssB.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../AssB/dist/README.TXT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../AssB/manifest.mf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../AssB/nbproject/build-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../AssB/nbproject/genfiles.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../AssB/nbproject/private/private.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../AssB/nbproject/private/private.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../AssB/nbproject/project.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../AssB/nbproject/project.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../AssB/src/assb/AssB.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../AssB/src/machines/HouseRobot.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../AssB/src/people/Butler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../AssB/src/people/Housekeeper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../AssB/src/people/Person.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../AssignmentD.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy.rar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/.idea/artifacts/JavaFXApp.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/.idea/description.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/.idea/libraries/JavaFXBusy.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/JavaFxApplication.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/build/built-jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/build/classes/javafxbusy/BusyApplication$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/build/classes/javafxbusy/BusyApplication$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/build/classes/javafxbusy/BusyApplication$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/build/classes/javafxbusy/BusyApplication$UpdateLabel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/build/classes/javafxbusy/BusyApplication.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/build/classes/javafxbusy/BusyWorker.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/build/classes/sample/Controller.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/build/classes/sample/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/build/classes/sample/sample.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/JavaFXBusy.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/JavaFXBusy.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/JavaFXBusy.jnlp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run1182497973/JavaFXBusy.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run1182497973/JavaFXBusy.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run1182497973/JavaFXBusy.jnlp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run1182497973/web-files/dtjava.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run1182497973/web-files/error.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run1182497973/web-files/get_java.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run1182497973/web-files/get_javafx.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run1182497973/web-files/javafx-chrome.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run1182497973/web-files/javafx-loading-100x100.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run1182497973/web-files/javafx-loading-25x25.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run1182497973/web-files/upgrade_java.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run1182497973/web-files/upgrade_javafx.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run307811932/JavaFXBusy.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run307811932/JavaFXBusy.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run307811932/JavaFXBusy.jnlp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run307811932/web-files/dtjava.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run307811932/web-files/error.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run307811932/web-files/get_java.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run307811932/web-files/get_javafx.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run307811932/web-files/javafx-chrome.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run307811932/web-files/javafx-loading-100x100.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run307811932/web-files/javafx-loading-25x25.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run307811932/web-files/upgrade_java.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run307811932/web-files/upgrade_javafx.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run724418791/JavaFXBusy.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run724418791/JavaFXBusy.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run724418791/JavaFXBusy.jnlp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run724418791/web-files/dtjava.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run724418791/web-files/error.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run724418791/web-files/get_java.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run724418791/web-files/get_javafx.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run724418791/web-files/javafx-chrome.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run724418791/web-files/javafx-loading-100x100.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run724418791/web-files/javafx-loading-25x25.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run724418791/web-files/upgrade_java.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/run724418791/web-files/upgrade_javafx.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/web-files/dtjava.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/web-files/error.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/web-files/get_java.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/web-files/get_javafx.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/web-files/javafx-chrome.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/web-files/javafx-loading-100x100.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/web-files/javafx-loading-25x25.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/web-files/upgrade_java.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/dist/web-files/upgrade_javafx.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/nbproject/UPDATED.TXT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/nbproject/build-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/nbproject/configs/Run_as_WebStart.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/nbproject/configs/Run_in_Browser.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/nbproject/genfiles.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/nbproject/jfx-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/nbproject/jfx-impl_backup.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/nbproject/private/configs/Run_as_WebStart.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/nbproject/private/configs/Run_in_Browser.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/nbproject/private/private.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/nbproject/private/private.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/nbproject/project (Joris Geurts's conflicted copy 2015-03-04).properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/nbproject/project.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/nbproject/project.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/out/production/JavaFxApplication/sample/Controller.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/out/production/JavaFxApplication/sample/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/out/production/JavaFxApplication/sample/sample.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/src/sample/Controller.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/src/sample/Main.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFXBusy/src/sample/sample.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JavaFxBusyJeffArthur.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ProcessBuilder/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ProcessBuilder/build/built-jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ProcessBuilder/build/classes/processbuilder/Assignment_F.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ProcessBuilder/dist/ProcessBuilder.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ProcessBuilder/dist/README.TXT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ProcessBuilder/manifest.mf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ProcessBuilder/nbproject/build-impl.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ProcessBuilder/nbproject/genfiles.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ProcessBuilder/nbproject/private/private.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ProcessBuilder/nbproject/private/private.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ProcessBuilder/nbproject/project.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ProcessBuilder/nbproject/project.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ProcessBuilder/src/processbuilder/Assignment_F.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ProcessBuilderJeffArthur.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../plop/.idea/ant.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../plop/.idea/artifacts/JavaFXApp.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../plop/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../plop/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../plop/.idea/description.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../plop/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../plop/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../plop/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../plop/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../plop/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../plop/plop.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../plop/src/sample/Controller.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../plop/src/sample/Main.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../plop/src/sample/sample.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../README.md" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Assignment Process Scheduling.odt" afterPath="$PROJECT_DIR$/../Assignment Process Scheduling.odt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaFXMandelbrot/javafxmandelbrot/MandelbrotApplication$MouseEventHandler.class" afterPath="$PROJECT_DIR$/out/production/JavaFXMandelbrot/javafxmandelbrot/MandelbrotApplication$MouseEventHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaFXMandelbrot/javafxmandelbrot/MandelbrotApplication.class" afterPath="$PROJECT_DIR$/out/production/JavaFXMandelbrot/javafxmandelbrot/MandelbrotApplication.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/javafxmandelbrot/MandelbrotApplication.java" afterPath="$PROJECT_DIR$/src/javafxmandelbrot/MandelbrotApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/javafxmandelbrot/PixelManager.java" afterPath="$PROJECT_DIR$/src/javafxmandelbrot/PixelManager.java" />
     </list>
     <ignored path="JavaFXMandelbrot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,66 +244,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Mandelbrot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/javafxmandelbrot/Mandelbrot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MandelbrotApplication.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MandelbrotApplication.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/javafxmandelbrot/MandelbrotApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="77" column="61" selection-start-line="77" selection-start-column="61" selection-end-line="77" selection-end-column="61" />
+            <state relative-caret-position="-1476">
+              <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ThreadOverview.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/javafxmandelbrot/ThreadOverview.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48698884">
-              <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/javafxmandelbrot/Tile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PixelManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/javafxmandelbrot/PixelManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -101,18 +267,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/javafxmandelbrot/Mandelbrot.java" />
-        <option value="$PROJECT_DIR$/src/javafxmandelbrot/PixelManager.java" />
-        <option value="$PROJECT_DIR$/src/javafxmandelbrot/ThreadOverview.java" />
         <option value="$PROJECT_DIR$/src/javafxmandelbrot/MandelbrotApplication.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="67" />
-    <option name="y" value="52" />
-    <option name="width" value="1556" />
-    <option name="height" value="1747" />
+    <option name="x" value="49" />
+    <option name="y" value="18" />
+    <option name="width" value="2511" />
+    <option name="height" value="1062" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -139,6 +302,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -177,18 +342,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Application.MandelbrotApplication">
     <configuration default="false" name="MandelbrotApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -202,8 +357,8 @@
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -219,31 +374,21 @@
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
-      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
-      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
-      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -253,27 +398,15 @@
       <option name="METHOD_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
-      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
-      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
-      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -290,8 +423,8 @@
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -476,35 +609,39 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="943de35a-7f78-4ed0-ad3e-a33a4d7dbdc5" name="Default" comment="" />
-      <created>1458033000208</created>
+      <changelist id="6173b04a-c841-4da0-8615-210901f4ffd8" name="Default" comment="" />
+      <created>1458411232654</created>
       <option name="number" value="Default" />
-      <updated>1458033000208</updated>
+      <option name="presentableId" value="Default" />
+      <updated>1458411232654</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="52" width="1556" height="1747" extended-state="4" />
+    <frame x="49" y="18" width="2511" height="1062" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32962587" sideWeight="0.50298685" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969698" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969698" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32962587" sideWeight="0.49701315" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24437086" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969698" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14735165" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -515,15 +652,22 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -531,215 +675,37 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/javafxmandelbrot/Mandelbrot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/javafxmandelbrot/MandelbrotApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="155" column="10" selection-start-line="155" selection-start-column="10" selection-end-line="155" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/javafxmandelbrot/Tile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/javafxmandelbrot/PixelManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/javafxmandelbrot/Mandelbrot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/javafxmandelbrot/MandelbrotApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/javafxmandelbrot/PixelManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/jdk1.8.0_73/javafx-src.zip!/javafx/application/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="267" column="0" selection-start-line="267" selection-start-column="0" selection-end-line="267" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/jdk1.8.0_73/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33271375">
-          <caret line="1785" column="0" selection-start-line="1785" selection-start-column="0" selection-end-line="1785" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/javafxmandelbrot/Tile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/jdk1.8.0_73/src.zip!/java/lang/Runnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1747212">
-          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/javafxmandelbrot/PixelManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/javafxmandelbrot/Mandelbrot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/javafxmandelbrot/MandelbrotApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="61" selection-start-line="77" selection-start-column="61" selection-end-line="77" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/javafxmandelbrot/ThreadOverview.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48698884">
-          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+        <state relative-caret-position="471">
+          <caret line="77" column="37" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>JavaFXMandelbrot</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/src/javafxmandelbrot/TileFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javafxmandelbrot/MandelbrotApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1476">
+          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
