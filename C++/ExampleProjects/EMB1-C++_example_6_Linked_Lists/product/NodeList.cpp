@@ -110,8 +110,8 @@ bool NodeList::removeNode(Node * nodeToRemove)
 
   if (nodeToRemove == head)
   {
-    delete head;
-    head = NULL;
+    head = nodeToRemove->getNext();
+    delete nodeToRemove;
     return true;
   }
 
