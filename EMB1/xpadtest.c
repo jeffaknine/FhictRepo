@@ -47,7 +47,8 @@ int main(int argc, char *argv[])
 			fprintf(stderr, "Transfer failed: reading", error);
 		}
 		
-		printf("Button pressed : %s\n",check(dataOut));
+		//printf("Button pressed : %s\n",check(dataOut));
+		check(dataOut);
 		
 		unsigned char led[] = {1,2,0x00};
 		
@@ -126,63 +127,66 @@ void ledChange(uint8_t *dataOut)
 	}
 }
 
-char check(uint8_t *dataOut)
+void check(uint8_t *dataOut)
 {
-	char value;
 	printf("\n");
-	if (((dataOut[3]>>4)&one) )
+	if (((dataOut[6]>0)&one) )
 	{
-		return value = 'A';
+		printf("%dleft stick X axis\n:",dataOut[11]);
 	}
-	else if ((dataOut[3]>>5)&one)
-	{
-		return value ='B';
-		exit(0);
-	}
-	else if ((dataOut[3]>>6)&one)
-	{
-		return value ='X';
-	}
-	else if ((dataOut[3]>>7)&one)
-	{
-		return  value ='Y';
-	}
-	else if ((dataOut[3]>>1)&one)
-	{
-		return value ="RB";
-	}
-	else if ((dataOut[3]>>0)&one)
-	{
-		return value ="LB";
-	}
-	else if ((dataOut[2]>>4)&one)
-	{
-		return value = "Start";
-	}
-	else if ((dataOut[2]>>5)&one)
-	{
-		return value = "Back";
-	}
-	else if ((dataOut[3]>>2)&one)
-	{
-		return value = "Xbox Button";
+	// if (((dataOut[3]>>4)&one) )
+	// {
+	// 	return 'A';
+	// }
+	// else if ((dataOut[3]>>5)&one)
+	// {
+	// 	return value ='B';
+	// 	exit(0);
+	// }
+	// else if ((dataOut[3]>>6)&one)
+	// {
+	// 	return value ='X';
+	// }
+	// else if ((dataOut[3]>>7)&one)
+	// {
+	// 	return  value ='Y';
+	// }
+	// else if ((dataOut[3]>>1)&one)
+	// {
+	// 	return value ="RB";
+	// }
+	// else if ((dataOut[3]>>0)&one)
+	// {
+	// 	return value ="LB";
+	// }
+	// else if ((dataOut[2]>>4)&one)
+	// {
+	// 	return value = "Start";
+	// }
+	// else if ((dataOut[2]>>5)&one)
+	// {
+	// 	return value = "Back";
+	// }
+	// else if ((dataOut[3]>>2)&one)
+	// {
+	// 	return value = "Xbox Button";
 
-	}
-	else if ((dataOut[5])> 0)
-	{
-		return value = "Right Trigger";
-	}
-	else if ((dataOut[4])> 0)
-	{
-		return value = "Left Trigger";
-	}
+	// }
+	// else if ((dataOut[5])> 0)
+	// {
+	// 	return value = "Right Trigger";
+	// }
+	// else if ((dataOut[4])> 0)
+	// {
+	// 	return value = "Left Trigger";
+	// }
 	
-	else if ((dataOut[2]>>6)&one)
-	{
-		return value = "Left Stick";
-	}
-	else if ((dataOut[2]>>7)&one)
-	{
-		return value = "Right Stick";
-	}
+	// else if ((dataOut[2]>>6)&one)
+	// {
+	// 	return value = "Left Stick";
+	// }
+	// else if ((dataOut[2]>>7)&one)
+	// {
+	// 	return value = "Right Stick";
+	// }
 }
