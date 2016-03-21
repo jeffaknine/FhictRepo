@@ -27,7 +27,7 @@ using namespace std;
 	{
 		for (unsigned int i = 0; i < wheels.size(); ++i)
 		{
-			wheels.push_back(new Wheel(otherCar::wheels[i]))
+			wheels.push_back(new Wheel(otherCar.wheels[i]));
 		}
 		licensePlate = otherCar.licensePlate;
 		model = otherCar.model;
