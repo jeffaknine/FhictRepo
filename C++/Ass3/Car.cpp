@@ -25,13 +25,18 @@ using namespace std;
 
 	void Car::copyCar(const Car& otherCar)
 	{
-
+		for (unsigned int i = 0; i < wheels.size(); ++i)
+		{
+			wheels.push_back(new Wheel(otherCar::wheels[i]))
+		}
+		licensePlate = otherCar.licensePlate;
+		model = otherCar.model;
 	}
 
 
 	Car::Car(const string& mod, const string& material, int diameter, int nrWheels)
 	{
-		std::vector<Wheel*>;
+		std::vector<Wheel*>();
 		licensePlate = "";
 		model = mod;
 		
@@ -72,12 +77,12 @@ using namespace std;
 
 	Wheel* Car::getWheel(int index)
 	{
-
+		return wheels[index];
 	}
 
 	void Car::removeWheel(int index)
 	{
-		if (index >= 0 && index < wheels.size())
+		if (index >= 0 && index < Car::getNrWheels())
 		{
 			wheels.erase(wheels.begin() + index);
 		}
@@ -91,6 +96,11 @@ using namespace std;
 	void Car::addWheel(int diameter, const string& material)
 	{
 		Wheel wheel(diameter,material);
+	}
+
+	Car::Car(const Car& myCar)
+	{
+
 	}
 
 	Car& operator=(const Car& myCar)
