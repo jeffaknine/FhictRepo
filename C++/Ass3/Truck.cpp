@@ -1,19 +1,19 @@
 #include "Truck.h"
-#include <vector>
+#include "Car.h"
 #include <string>
-#include <iostream>
 
 using namespace std;
 
 Truck::Truck(const string& model, const string& material, int diameter, int nrWheels, int power)
-:Car(model,material,diameter,nrWheels),
-power(new int (power))
+	:Car(model, material, diameter, nrWheels)
 {
+	 this->power = new int(power);
 }
 
 Truck::~Truck()
 {
 	delete power;
+	power = NULL;
 }
 
 int Truck::getPower() const
@@ -21,16 +21,17 @@ int Truck::getPower() const
 	return *power;
 }
 
-Truck::Truck(const Truck& myTruck):Car(myTruck)
+Truck::Truck(const Truck& myTruck) : Car(myTruck)
 {
-	delete power;
-	power = new int (myTruck.getPower());
+	power = new int(myTruck.getPower());
 }
 
 Truck& Truck::operator=(const Truck& myTruck)
 {
-	Car::operator=(myTruck);
+	if(this == &myTruck) return *this;
 	delete power;
+	Car::operator=(myTruck);
 	power = new int(myTruck.getPower());
+	
 	return *this;
 }

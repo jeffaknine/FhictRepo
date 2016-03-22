@@ -15,7 +15,7 @@ class Wheel
     std::string material;
 
   public:
-    Wheel(int diameter, const std::string& material);
+   Wheel(int diameter, const std::string& material);
     /* pre : d > 0
        post: A Wheel object is created with the given material and diameter
     */

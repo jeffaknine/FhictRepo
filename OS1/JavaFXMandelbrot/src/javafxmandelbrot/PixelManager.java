@@ -18,7 +18,7 @@ public class PixelManager implements Runnable{
         pixelArray = new Pixel[size];
     }
 
-    public void add(Pixel p) {
+    public synchronized void add(Pixel p) {
 
         int i;
         for (i = 0; i < pixelArray.length; i++)

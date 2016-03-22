@@ -1,25 +1,22 @@
 #include "Wheel.h"
-#include <vector>
-#include <string>
-#include <iostream>
 
-using namespace std;
-
-Wheel::Wheel(int diameter, const string& material)
-:	diameter(diameter),
-	material(material)
+Wheel::Wheel(int diameter, const std::string& material)
 {
+	this->diameter = diameter;
+	this->material = material;
 }
 
-string Wheel::getMaterial() const
+
+std::string Wheel::getMaterial() const
 {
 	return material;
 }
 
-void Wheel::setMaterial(const string& material)
+void Wheel::setMaterial(const std::string& material)
 {
-	Wheel::material = material;
+	this->material = material;
 }
+
 
 int Wheel::getDiameter() const
 {
