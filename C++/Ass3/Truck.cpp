@@ -21,16 +21,16 @@ int Truck::getPower() const
 	return *power;
 }
 
-Truck::Truck(const Truck& myTruck)
+Truck::Truck(const Truck& myTruck):Car(myTruck)
 {
 	delete power;
 	power = new int (myTruck.getPower());
 }
 
-Truck::Truck& operator=(const Truck& myTruck)
+Truck& Truck::operator=(const Truck& myTruck)
 {
 	Car::operator=(myTruck);
-	delete powerl
+	delete power;
 	power = new int(myTruck.getPower());
 	return *this;
 }

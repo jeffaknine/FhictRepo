@@ -6,10 +6,10 @@ using namespace std;
 
 class Ass3Test : public ::testing::Test {
 protected:
-	Truck myTruck("Daf","steel",10,8,1000);
+	Truck *myTruck;
 	virtual void SetUp()
 	{
-		
+		myTruck = new Truck("Daf","steel",10,8,1000);
 	}
 
 	virtual void TearDown()
@@ -19,7 +19,7 @@ protected:
 };
 
 
-TEST_F()
+TEST_F(Ass3Test, getPowerTest)
 {
-	
+	EXPECT_EQ(myTruck->getPower(),10);
 }
