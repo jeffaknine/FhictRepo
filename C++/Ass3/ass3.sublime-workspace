@@ -1,0 +1,308 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"node",
+				"nodeToRemove"
+			],
+			[
+				"license",
+				"licensePlate"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"licene",
+				"licensePlate"
+			],
+			[
+				"data",
+				"dataOut"
+			],
+			[
+				"my",
+				"myMeasurement"
+			],
+			[
+				"li",
+				"libusb_detach_kernel_driver"
+			],
+			[
+				"Add",
+				"addvalue"
+			],
+			[
+				"MEas",
+				"MeasurementSeries"
+			],
+			[
+				"Meas",
+				"Measurement"
+			],
+			[
+				"l",
+				"libusb_device"
+			],
+			[
+				"count",
+				"count1"
+			],
+			[
+				"in",
+				"include"
+			],
+			[
+				"Mear",
+				"MeasurementSeriesTest"
+			],
+			[
+				"m",
+				"myMeasurements"
+			],
+			[
+				"en",
+				"endl"
+			],
+			[
+				"Measur",
+				"MeasurementSeries"
+			],
+			[
+				"case",
+				"case7"
+			],
+			[
+				"M",
+				"MeasurementSeries"
+			],
+			[
+				"opt",
+				"optopt"
+			],
+			[
+				"c",
+				"count"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/jeff/class/C++/ExampleProjects/EMB1-C++_example_6_Linked_Lists/product/main.cpp",
+		"/home/jeff/class/C++/ExampleProjects/EMB1-C++_example_6_Linked_Lists/product/NodeList.h",
+		"/home/jeff/class/C++/ExampleProjects/EMB1-C++_example_6_Linked_Lists/product/NodeList.cpp",
+		"/home/jeff/class/C++/ExampleProjects/EMB1-C++_example_6_Linked_Lists/product/Node.cpp",
+		"/home/jeff/class/C++/ExampleProjects/EMB1-C++_example_6_Linked_Lists/product/Node.h",
+		"/home/jeff/class/C++/Ass3/Wheel.cpp",
+		"/home/jeff/class/C++/Ass3/Truck.cpp",
+		"/home/jeff/class/C++/Ass3/Car.cpp",
+		"/home/jeff/class/EMB1/xpadtest.c",
+		"/home/jeff/class/C++/Ass1/EnhancedMeasurementSeries",
+		"/home/jeff/class/C++/Ass1/Makefile",
+		"/home/jeff/class/C++/Ass3/Truck.h",
+		"/home/jeff/class/C++/Ass3/Makefile",
+		"/home/jeff/Desktop/C++/Ass1/product/EnhancedMeasurementSeries.h",
+		"/home/jeff/Desktop/C++/Ass1/test/MeasurementSeriesTest.cpp",
+		"/home/jeff/el32/libusb/src/Makefile",
+		"/home/jeff/el32/libusb/src/test_alex.c",
+		"/home/jeff/el32/libusb/src/xpadtest",
+		"/home/jeff/el32/libusb/src/test_internet.c",
+		"/home/jeff/el32/libusb/src/test_hristo.txt",
+		"/home/jeff/Desktop/C++/Ass1/Makefile",
+		"/home/jeff/Desktop/C++/Ass1/test/triedWithClass.cpp",
+		"/home/jeff/Desktop/C++/Ass1/product/menu.cpp",
+		"/home/jeff/Desktop/C++/Ass1/product/MeasurementSeries.h",
+		"/home/jeff/Desktop/C++/Ass1/product/MeasurementSeries.cpp",
+		"/home/jeff/Desktop/C++/Ass1/product/EnhancedMeasurementSeries.cpp",
+		"/home/jeff/Desktop/C++/Ass1/product/MeasurementSeries.h.gch",
+		"/home/jeff/Desktop/EMB1/1stXbox.c",
+		"/home/jeff/Desktop/EMB1/xpadtest.c",
+		"/home/jeff/el32/ncurses/src/ncurses_demo.c",
+		"/home/jeff/el32/libusb/src/xpadtest.c",
+		"/home/jeff/Desktop/EMB1/helloargv.c",
+		"/home/jeff/Desktop/C++/Ass1/product/EnhanceMeasurementSeries.h",
+		"/home/jeff/Desktop/C++/Ass1/product/EnhancedMesurementSeries.c"
+	],
+	"find":
+	{
+		"height": 43.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"push_back",
+			"h",
+			"dataIn",
+			".",
+			"devh",
+			"uint8_t",
+			"read",
+			"check",
+			"dataIn",
+			"_alex",
+			"h",
+			"test_hristo",
+			"xpadtest",
+			"MeasurementSeries"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 43.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ass3.sublime-project",
+	"replace":
+	{
+		"height": 82.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"x",
+				"EMB1/xpadtest.c"
+			],
+			[
+				"c",
+				"C++/Ass3/Car.h"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 228.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -5,10 +5,10 @@
 
 using namespace std;
 
-Wheel::Wheel(int diameter, const std::string& material)
+Wheel::Wheel(int diameter, const string& material)
+:	diameter(diameter),
+	material(material)
 {
-	diameter = diameter;
-	material = material;
 }
 
 string Wheel::getMaterial() const
@@ -18,7 +18,7 @@ string Wheel::getMaterial() const
 
 void Wheel::setMaterial(const string& material)
 {
-	material = material;
+	Wheel::material = material;
 }
 
 int Wheel::getDiameter() const

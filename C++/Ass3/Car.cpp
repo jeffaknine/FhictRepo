@@ -25,9 +25,10 @@ using namespace std;
 
 	void Car::copyCar(const Car& otherCar)
 	{
+		deleteAllWheels();
 		for (unsigned int i = 0; i < wheels.size(); ++i)
 		{
-			wheels.push_back(new Wheel(otherCar.wheels[i]));
+			wheels.push_back(new Wheel(*(otherCar.wheels[i])));
 		}
 		licensePlate = otherCar.licensePlate;
 		model = otherCar.model;
@@ -46,9 +47,9 @@ using namespace std;
 		}
 	}
 
-	Car:: virtual ~Car()
+	Car:: ~Car()
 	{
-
+		deleteAllWheels();
 	}
 
 	void Car::setLicensePlate(const string& license)
@@ -100,11 +101,17 @@ using namespace std;
 
 	Car::Car(const Car& myCar)
 	{
-
+		Car::copyCar(myCar);
 	}
 
-	Car& operator=(const Car& myCar)
+	Car& Car::operator=(const Car& myCar)
 	{
+		if (&myCar == this)
+		{
+			return *this;
+		}
+		copyCar(myCar);
+		return *this;
 		
 	}
 
