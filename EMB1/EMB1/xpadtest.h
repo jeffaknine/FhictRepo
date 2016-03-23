@@ -2,6 +2,7 @@
 #define XPADTEST_H_
 #include <libusb-1.0/libusb.h>
 #include <stdio.h>
+#include <string.h>
 
 #define vid 0x045e	//vendor ID
 #define pid 0x028e	//product ID
@@ -25,9 +26,9 @@ libusb_device_handle *h;
 
 //methods
 int run();
-void doRumble(uint8_t *dataOut);
+void doRumble(char *state);
 int dataPush(uint8_t *method);
 int dataPull(uint8_t *method);
-void ledChange(uint8_t *dataOut);
+void ledChange(char *state);
 char* check(uint8_t *dataOut);
 #endif

@@ -10,16 +10,9 @@ char *choices[] = {
 			"Rubmle",
 			"Exit",
 		  };
-char *text[] = {
-			"Check the statesfjkgjdf",
-			"Control LED",
-			"Rubmle",
-			"Exit",
-
-		};
 char *led[] = {
 			"All blink",
-			"1 by 1",
+			"All flashes, then on",
 			"Circle blinking",
 			"< -- Exit",
 
@@ -63,15 +56,15 @@ void printInSecondMenu(WINDOW *second_menu,int choice)
 	switch(choice)
 		{	
 			case 1:
-				mvwprintw(second_menu, secondY, secondX, "%s", text[0]);
-				++secondY;
+				//mvwprintw(second_menu, secondY, secondX, "%s", "Button pressed : ",check(dataOut));
+				//++secondY;
 			break;
 			case 2:
-				mvwprintw(second_menu, secondY, secondX, "%s", text[1]);
+				mvwprintw(second_menu, secondY, secondX, "%s", choices[1]);
 				++secondY;
 			break;
 			case 3:
-				mvwprintw(second_menu, secondY, secondX, "%s", text[2]);
+				mvwprintw(second_menu, secondY, secondX, "%s", choices[2]);
 				++secondY;
 			break;
 		}
