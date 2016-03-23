@@ -40,12 +40,6 @@ public class PixelManager implements Runnable{
             // one pixel, displayed as a 1x1 rectangle
             // gc.setFill(p.getColor());
             // gc.fillRect(p.getX(), p.getY(), 1, 1);
-//        for (int i = 0; i < index; i++)
-//        {
-//            gc.setFill(pixelArray[i].getColor());
-//            gc.fillRect(pixelArray[i].getX(),pixelArray[i].getY(),1,1);
-//        }
-
         Platform.runLater(this);
 
     }

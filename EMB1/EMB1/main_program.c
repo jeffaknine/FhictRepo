@@ -53,6 +53,10 @@ int main()
 		
 			if(c==10){printInSecondMenu(second_menu,choice);}
 			if(c == 10 && choice == 2 ){led_menu_selected=true;keypad(menu_win,FALSE);keypad(led_menu,TRUE);leds_menu(led_menu,ledhighlight);refresh();}
+			if (c == 10 && choice == 4){break;}
+			{
+				/* code */
+			}
 		}
 			if(l == 10 && ledchoice == 4){led_menu_selected=false;keypad(menu_win,TRUE);keypad(led_menu,FALSE);print_second_menu(second_menu,highlight);refresh(); l= 0;ledchoice=0;}//ledmenuOFF
 			

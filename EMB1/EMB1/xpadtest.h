@@ -18,8 +18,8 @@
 
 uint8_t dataOut[20];
 int error, transferred;
-int speed = 0x00;
-int weight = 0x00;
+int speed;
+int weight;
 //global
 libusb_device_handle *h;
 

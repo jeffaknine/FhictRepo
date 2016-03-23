@@ -1,4 +1,8 @@
 #include "xpadtest.h"
+
+int speed = 0x00;
+int weight = 0x00;
+
 int run()
 {
 	//libusb_set_auto_detach_kernel_driver(h,0);
@@ -62,5 +66,9 @@ char* check(uint8_t *dataOut)
 	else if ((dataOut[4])> 0)    {return "LT was pressed";}
 	else if ((dataOut[2]>>6)&one){return "Left Stick was pressed";}
 	else if ((dataOut[2]>>7)&one){return "Right stick was pressed";}
+	// else if (((dataOut[6]>0)&one)){return "Left Stick X-Axis"}
+	// {
+	// 	/* code */
+	// }
 	return "0";
 }
