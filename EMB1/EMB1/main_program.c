@@ -52,9 +52,12 @@ int main()
 			}
 		
 			if(c==10){printInSecondMenu(second_menu,choice);}
-			if(c == 10 && choice == 2 ){led_menu_selected=true;keypad(menu_win,FALSE);keypad(led_menu,TRUE);leds_menu(led_menu,ledhighlight);refresh();}
+			if(c==10 && choice==1){mvwprintw(second_menu, secondY, secondX, "%s", "Button pressed : ",check(dataOut));}
+			if(c == 10 && choice == 2 ){doRumble(choices[1]);led_menu_selected=true;keypad(menu_win,FALSE);keypad(led_menu,TRUE);leds_menu(led_menu,ledhighlight);refresh();}
+			if(c == 10 && choice == 3 ){doRumble(choices[3]);}
+			if(c == 10 && choice == 4){doRumble(choices[1]);break;}
 		}
-			if(l == 10 && ledchoice == 4){led_menu_selected=false;keypad(menu_win,TRUE);keypad(led_menu,FALSE);print_second_menu(second_menu,highlight);refresh(); l= 0;ledchoice=0;}//ledmenuOFF
+			
 			
 		if(led_menu_selected == true)
 		{
@@ -77,6 +80,10 @@ int main()
 						break;
 				}
 				leds_menu(led_menu,ledhighlight);
+				if (l == 10 && ledchoice == 1){ledChange(led[1]);}
+				if (l == 10 && ledchoice == 2){ledChange(led[2]);}
+				if (l == 10 && ledchoice == 3){ledChange(led[3]);}
+				if(l == 10 && ledchoice == 4){led_menu_selected=false;keypad(menu_win,TRUE);keypad(led_menu,FALSE);print_second_menu(second_menu,highlight);refresh(); l= 0;ledchoice=0;}//ledmenuOFF
 		}
 		
 		print_menu(menu_win, highlight);

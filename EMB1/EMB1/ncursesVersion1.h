@@ -6,35 +6,18 @@
 #define WIDTH 30
 #define HEIGHT 10 
 
-int startx = 0;
-int starty = 0;
-int secondX = 4;
-int secondY = 2;
+int startx;
+int starty;
+int secondX;
+int secondY;
 
-char *choices[] = { 
-			"Check the states",
-			"Control LED -- >",
-			"Rubmle",
-			"Exit",
-		  };
-char *text[] = {
-			"Check the statesfjkgjdf",
-			"Control LED",
-			"Rubmle",
-			"Exit",
-
-		};
-char *led[] = {
-			"All blink",
-			"1 by 1",
-			"Circle blinking",
-			"< -- Exit",
-
-		};
+char *choices[4];
+char *text[4];
+char *led[4];
 		
-int n_choices = sizeof(choices) / sizeof(char *);
-int t_choices = sizeof(text) / sizeof(char *);
-int l_choices = sizeof(led) / sizeof(char *);
+int n_choices;
+int t_choices;
+int l_choices;
 
 void print_menu(WINDOW *menu_win, int highlight);
 void print_second_menu(WINDOW *second_menu, int highlight);

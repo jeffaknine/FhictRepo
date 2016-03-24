@@ -1,5 +1,27 @@
 #include "ncursesVersion1.h"
- 
+int startx = 0;
+int starty = 0;
+int secondX = 4;
+int secondY = 2;
+
+char *choices[] = { 
+			"Check the states",
+			"Control LED -- >",
+			"Rubmle",
+			"Exit",
+		  };
+char *led[] = {
+			"All blink",
+			"All flashes, then on",
+			"Circle blinking",
+			"< -- Exit",
+
+		};
+		
+int n_choices = sizeof(choices) / sizeof(char *);
+int t_choices = sizeof(text) / sizeof(char *);
+int l_choices = sizeof(led) / sizeof(char *);
+
 void print_menu(WINDOW *menu_win, int highlight)
 {
 	int x, y, i;	
@@ -34,15 +56,15 @@ void printInSecondMenu(WINDOW *second_menu,int choice)
 	switch(choice)
 		{	
 			case 1:
-				mvwprintw(second_menu, secondY, secondX, "%s", text[0]);
-				++secondY;
+				//mvwprintw(second_menu, secondY, secondX, "%s", "Button pressed : ",check(dataOut));
+				//++secondY;
 			break;
 			case 2:
-				mvwprintw(second_menu, secondY, secondX, "%s", text[1]);
+				mvwprintw(second_menu, secondY, secondX, "%s", choices[1]);
 				++secondY;
 			break;
 			case 3:
-				mvwprintw(second_menu, secondY, secondX, "%s", text[2]);
+				mvwprintw(second_menu, secondY, secondX, "%s", choices[2]);
 				++secondY;
 			break;
 		}

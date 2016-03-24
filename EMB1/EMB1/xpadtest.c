@@ -1,4 +1,7 @@
 #include "xpadtest.h"
+int speed = 0x00;
+int weight = 0x00;
+
 int run()
 {
 	//libusb_set_auto_detach_kernel_driver(h,0);
@@ -8,9 +11,10 @@ int run()
 	if (h == NULL) {return 0;}return 1;
 }
 
-void doRumble(uint8_t *dataOut)
+void doRumble(char *state)
 {	
-	if (((dataOut[3]>>4)&one) ){
+	if (strcmp(state,"Rumble")!=0)
+	{
 		speed = mid;
 		weight = mid;	
 	}
@@ -20,6 +24,7 @@ void doRumble(uint8_t *dataOut)
 		weight = 0x00;
 	}
 	uint8_t	rumble[8]={0x00, 0x08, 0x00, speed, weight, 0x00, 0x00, 0x00};
+	dataPush(rumble);
 }
 
 int dataPush(uint8_t *method)
@@ -34,21 +39,32 @@ int dataPull(uint8_t *method)
 	return 1;
 }
 
-void ledChange(uint8_t *dataOut)
+void ledChange(char *state)
 {
 	uint8_t led[3];
 	led[0] = 1;
 	led[1] = 2;
 	led[2] = 0x00;
-	if ((dataOut[2])&one)        {led[2] = ledOne;}//printf("D-pad Up was pressed");
-	else if ((dataOut[2]>>1)&one){led[2] = ledTwo;}//printf("D-pad Down was pressed");
-	else if ((dataOut[2]>>2)&one){led[2]=ledThree;}//printf("D-pad Left was pressed");
-	else if ((dataOut[2]>>3)&one){led[2] = ledFour;}//printf("D-pad Right was pressed");
-	else{led[2] = 0x00;}
+	if (strcmp(state,"All Blink")!=0)
+	{
+		led[2] = 0x01;
+		dataPush(led);
+	}
+	if (strcmp(state,"All flashes, then on")!=0)
+	{
+		led[2] = 0x05;
+		dataPush(led);
+	}
+	if (strcmp(state,"Circle blinking")!=0)
+	{
+		led[2] = 0x0a;
+		dataPush(led);
+	}
 }
 
 char* check(uint8_t *dataOut)
 {
+	dataPull(dataOut);	
 	if      (((dataOut[3]>>4)&one)){return "A was pressed";}
 	else if ((dataOut[3]>>5)&one){return "B was pressed";}
 	else if ((dataOut[3]>>6)&one){return "X was pressed";}
@@ -62,5 +78,6 @@ char* check(uint8_t *dataOut)
 	else if ((dataOut[4])> 0)    {return "LT was pressed";}
 	else if ((dataOut[2]>>6)&one){return "Left Stick was pressed";}
 	else if ((dataOut[2]>>7)&one){return "Right stick was pressed";}
+	//else if (((dataOut[6]>0)&one)){return "Left Stick X-Axis"}
 	return "0";
 }
