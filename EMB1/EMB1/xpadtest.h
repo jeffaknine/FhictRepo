@@ -27,8 +27,8 @@ libusb_device_handle *h;
 //methods
 int run();
 void doRumble(char *state);
-int dataPush(uint8_t *method);
-int dataPull(uint8_t *method);
+void dataPush(uint8_t *method);
+void dataPull(uint8_t *method);
 void ledChange(char *state);
 char* check(uint8_t *dataOut);
 #endif

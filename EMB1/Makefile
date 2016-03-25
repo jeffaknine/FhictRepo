@@ -16,6 +16,7 @@ CC = '/home/jeff/buildroot/output/host/usr/bin/i586-linux-gcc'
 
 GCC = gcc
 
+# all: host
 all: $(SOURCES) $(TARGET) upload
 
 upload:

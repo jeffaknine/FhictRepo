@@ -9,11 +9,12 @@ main(int argc, char *argv[])
 	int error, transferred;
 
 	libusb_init(NULL);
-	libusb_kernel_driver_active(h,0);
-	libusb_detach_kernel_driver(h,0);
+	
 	libusb_claim_interface(h,0);
 	h = libusb_open_device_with_vid_pid(NULL, 0x045e, 0x028e);
 	
+	libusb_detach_kernel_driver(h,0);
+	libusb_kernel_driver_active(h,0);
 	if (h == NULL) {
 		fprintf(stderr, "Failed to open device\n");
 		return (1);

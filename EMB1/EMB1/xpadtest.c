@@ -8,7 +8,7 @@ int run()
 	libusb_init(NULL);
 	h = libusb_open_device_with_vid_pid(NULL, vid, pid);
 	libusb_claim_interface(h, 0);
-	if (h == NULL) {return 0;}return 1;
+	if (h == NULL) {return 1;}return 0;
 }
 
 void doRumble(char *state)
@@ -27,16 +27,16 @@ void doRumble(char *state)
 	dataPush(rumble);
 }
 
-int dataPush(uint8_t *method)
+void dataPush(uint8_t *method)
 {
-	if ((error = libusb_interrupt_transfer(h, endpIn, method, sizeof method, &transferred, 0)) != 0){return 0;}
-	else return 1;			
+	libusb_interrupt_transfer(h, endpIn, method, sizeof method, &transferred, 0);//) != 0){return 1;}
+	//else return 0;			
 }
 
-int dataPull(uint8_t *method)
+void dataPull(uint8_t *method)
 {
-	if ((error = libusb_interrupt_transfer(h, endpOut, method, sizeof method, &transferred, 0)) == 0){return 0;}
-	return 1;
+	libusb_interrupt_transfer(h, endpOut, method, sizeof method, &transferred, 0);//) != 0){return 1;}
+	//return 0;
 }
 
 void ledChange(char *state)

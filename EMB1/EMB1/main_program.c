@@ -14,11 +14,12 @@ int main()
 	int c;
 	int l;
 	bool led_menu_selected = false;
+	if(run()==1){printf("%sFail\n");}
 	initscr();
 	clear();
 	noecho();
 	cbreak();	/* Line buffering disabled. pass on everything */
-	startx = (80 - WIDTH) / 2;
+	startx = 10;
 	starty = (24 - HEIGHT) / 2;
 	menu_win = newwin(HEIGHT, WIDTH, starty, startx);
 	second_menu = newwin(HEIGHT, (WIDTH*2), (starty),(startx*4));
