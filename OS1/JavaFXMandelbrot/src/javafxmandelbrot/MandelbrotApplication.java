@@ -1,5 +1,6 @@
 package javafxmandelbrot;
 
+import java.util.ArrayList;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
@@ -17,13 +18,10 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-/**
- *
- * @author Joris
- */
+
 public class MandelbrotApplication extends Application implements EventHandler<ActionEvent> {
 
-    final static int X_PIXEL = 300; // change this value if you have a slow (or fast...) laptop
+    final static int X_PIXEL = 500; //630 change this value if you have a slow (or fast...) laptop
     final static int Y_PIXEL = X_PIXEL;
     final static int XY_SIZE = X_PIXEL * Y_PIXEL;
     final static double STEP = 2.3 / X_PIXEL;
@@ -36,7 +34,8 @@ public class MandelbrotApplication extends Application implements EventHandler<A
     private GraphicsContext gc;
     private PixelManager pixelManager;
     private TileFactory tileFactory;
-    private Thread t;
+    private ArrayList<Thread> threads;
+
     @Override
     public void start(Stage primaryStage) {
         btnStart = new Button("start");
@@ -49,6 +48,7 @@ public class MandelbrotApplication extends Application implements EventHandler<A
         btnStop.setOnAction(this);
         btnClear.setOnAction(this);
         btnSim.setOnAction(this);
+        threads = new ArrayList<>();
 
         primaryStage.setTitle("Mandelbrot");
         HBox root = new HBox();
@@ -75,7 +75,7 @@ public class MandelbrotApplication extends Application implements EventHandler<A
 
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
-        ThreadOverview threadOverview = new ThreadOverview();
+
         sim();
     }
 
@@ -102,7 +102,7 @@ public class MandelbrotApplication extends Application implements EventHandler<A
     private void sim() {
 
         // investigate the speed of coloring the canvas
-        
+
         pixelManager = new PixelManager(gc, XY_SIZE);
         System.out.println("sim-1 " + System.currentTimeMillis());
 
@@ -131,29 +131,40 @@ public class MandelbrotApplication extends Application implements EventHandler<A
             System.out.println("unknown event: " + t.toString());
         }
     }
-    
+
     private void stopThreads() {
-        // TODO: stopping threads
-        t.interrupt();
+        for(Thread t: threads){
+            t.interrupt();
+        }
+
+        System.out.println("Threads stopped");
     }
 
     private void startThreads() {
         int nrofTiles;
+
         pixelManager = new PixelManager(gc, XY_SIZE);
         initCanvas();
 
         nrofTiles = Integer.parseInt(cboxGrid.getValue().toString());
         tileFactory.setNrofTiles(nrofTiles);
+        threads.clear();
 
         for (int i = 0; i < nrofTiles; i++) {
             for (int j = 0; j < nrofTiles; j++) {
                 Tile tile = tileFactory.createTile(i, j);
                 Mandelbrot m = new Mandelbrot(tile, pixelManager);
-                m.calculate();
-                t = new Thread(m);
-                t.start();
+
+                // TODO: starting threads...
+                Thread t1 = new Thread(m);
+                t1.setName("startThreads()");
+                t1.start();
+                threads.add(t1);
+                //m.calculate();
             }
         }
+
+        ThreadOverview threadOverview = new ThreadOverview();
     }
 
     class MouseEventHandler implements EventHandler<MouseEvent> {
@@ -161,7 +172,7 @@ public class MandelbrotApplication extends Application implements EventHandler<A
         @Override
         public void handle(MouseEvent event) {
             System.out.println("mouse " + event.getX() + " " + event.getY() + " " + event.getButton());
-            
+
             if (event.getButton() == MouseButton.PRIMARY) {
                 tileFactory.zoomOut(event.getX(), event.getY());
             } else if (event.getButton() == MouseButton.SECONDARY) {
@@ -171,7 +182,7 @@ public class MandelbrotApplication extends Application implements EventHandler<A
             } else {
                 return;
             }
-            
+
             startThreads();
         }
     }

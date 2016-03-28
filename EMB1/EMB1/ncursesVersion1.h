@@ -11,7 +11,7 @@ int starty;
 int secondX;
 int secondY;
 
-char *choices[4];
+char *choices[5];
 char *text[4];
 char *led[4];
 		

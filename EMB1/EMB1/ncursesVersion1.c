@@ -7,7 +7,8 @@ int secondY = 2;
 char *choices[] = { 
 			"Check the states",
 			"Control LED -- >",
-			"Rubmle",
+			"Rumble",
+			"Stop Rumble",
 			"Exit",
 		  };
 char *led[] = {

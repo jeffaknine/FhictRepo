@@ -11,10 +11,9 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-/**
- *
- * @author Joris
- */
+
+
+
 public class ThreadOverview implements Runnable {
 
     private final Label labelHeader;
@@ -24,12 +23,12 @@ public class ThreadOverview implements Runnable {
     public ThreadOverview() {
         labelHeader = new Label(" id prio  name                   state      #blocked   cpu(ms)");
         labelInfo = new Label("");
-        
+
         // if you don't get a nice layout with nice aligned columns, change the font name
         // into another font which is available on your system, example: "Courier New"
         labelHeader.setFont(Font.font("DejaVu Sans Mono", 12));
         labelInfo.setFont(Font.font("DejaVu Sans Mono", 12));
-        
+
         VBox root2 = new VBox();
         root2.getChildren().add(labelHeader);
         root2.getChildren().add(labelInfo);
@@ -41,7 +40,7 @@ public class ThreadOverview implements Runnable {
         secondStage.setTitle("thread overview");
         secondStage.setScene(scene2);
         secondStage.show();
-        
+
         Thread t = new Thread (null, this, "Thread-Overview");
         t.start();
     }
@@ -61,22 +60,22 @@ public class ThreadOverview implements Runnable {
         }
         return (-1);
     }
-    
+
     private void updateThreadInfo() {
         Thread[] threads = new Thread[Thread.activeCount()];
         String s = "";
         ThreadMXBean tb = ManagementFactory.getThreadMXBean();
         ThreadInfo[] til = tb.dumpAllThreads(false, false);
-        
+
         Thread.enumerate(threads);
-        
+
         for (ThreadInfo ti : til) {
             s += String.format(format,
-                    ti.getThreadId(), 
+                    ti.getThreadId(),
                     getPrio(threads, ti.getThreadId()),
-                    ti.getThreadName(), 
+                    ti.getThreadName(),
                     ti.getThreadState().toString(),
-                    ti.getBlockedCount(), 
+                    ti.getBlockedCount(),
                     (float) tb.getThreadCpuTime(ti.getThreadId()) / 1000000.);
         }
         labelInfo.setText(s);

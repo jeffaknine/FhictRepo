@@ -6,7 +6,7 @@ import javafx.scene.paint.Color;
  *
  * @author Joris
  */
-public class Mandelbrot implements Runnable{
+public class Mandelbrot implements Runnable {
 
     private final static int RED = 5;       // nrof bits for each color
     private final static int GREEN = 5;
@@ -61,8 +61,8 @@ public class Mandelbrot implements Runnable{
     }
 
     public void calculate() {
-        for (int j = 0; j < tile.ny; j++) {
-            for (int i = 0; i < tile.nx; i++) {
+        for (int j = 0; j < tile.ny && !Thread.currentThread().isInterrupted(); j++) {
+            for (int i = 0; i < tile.nx && !Thread.currentThread().isInterrupted(); i++) {
                 double x = tile.ulx + (i * tile.step);
                 double y = tile.uly - (j * tile.step);   // math and pixel are inverted for y
 
