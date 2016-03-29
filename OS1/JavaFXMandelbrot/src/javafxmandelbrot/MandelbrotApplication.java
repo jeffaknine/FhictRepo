@@ -143,7 +143,7 @@ public class MandelbrotApplication extends Application implements EventHandler<A
     private void startThreads() {
         int nrofTiles;
 
-        pixelManager = new PixelManager(gc, XY_SIZE);
+        pixelManager = new PixelManager(gc, 1000);
         initCanvas();
 
         nrofTiles = Integer.parseInt(cboxGrid.getValue().toString());

@@ -3,32 +3,41 @@ package javafxmandelbrot;
 import javafx.application.Platform;
 import javafx.scene.canvas.GraphicsContext;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 /**
  *
  * @author Joris
  */
 public class PixelManager implements Runnable {
 
-    final Buffer buffer = new BufferOK();
-
     private final GraphicsContext gc;
-    private Pixel[] pixelArray;
+    private Pixel pixelArray[];
+    private int pai;
 
     PixelManager(GraphicsContext gc, int size) {
         this.gc = gc;
         pixelArray = new Pixel[size];
+        pai = 0;
     }
 
     public synchronized void add(Pixel p) {
 
         // TODO: add p to pixelArray
+        while (pai  >= pixelArray.length)
+        {
+            try{
+                show();
+                wait();
+            }
+            catch(InterruptedException ex){
+                Thread.currentThread().interrupt();
 
-        for(int index = 0; index < pixelArray.length; index++){
-            if(pixelArray[index] == null){
-                pixelArray[index] = p;
-                break;
             }
         }
+        pixelArray[pai] = p;
+        pai++;
 
     }
 
@@ -38,17 +47,19 @@ public class PixelManager implements Runnable {
     }
 
     @Override
-    public void run() {
+    public synchronized void run() {
 
-        for(int index = 0; index < pixelArray.length; index++){
+        for(int index = 0; index < pai; index++){
+            Pixel p = pixelArray[index];
+            if(p != null){
 
-            if(pixelArray[index] != null){
-
-                gc.setFill(pixelArray[index].getColor());
-                gc.fillRect(pixelArray[index].getX(), pixelArray[index].getY(), 1, 1);
-                pixelArray[index] = null;
+                gc.setFill(p.getColor());
+                gc.fillRect(p.getX(), p.getY(), 1, 1);
+                p = null;
             }
         }
+        pai = 0;
+        notify();
     }
 
 
