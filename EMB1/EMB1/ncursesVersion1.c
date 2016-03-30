@@ -16,7 +16,6 @@ char *led[] = {
 			"All flashes, then on",
 			"Circle blinking",
 			"< -- Exit",
-
 		};
 		
 int n_choices = sizeof(choices) / sizeof(char *);
