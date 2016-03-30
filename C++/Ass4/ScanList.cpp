@@ -16,8 +16,7 @@ ScanList::~ScanList()
 
 void ScanList::AddScan(int serialNumber)
 {
-	int index =0;
-	Scan scan  = scans;
+	Scan* scan  = scans;
 	while(true)
 	{
 		if (scan!=NULL)
@@ -25,7 +24,8 @@ void ScanList::AddScan(int serialNumber)
 			scan = scan->getNext();
 			if (scan->getSerialNumber() == serialNumber)
 			{
-				scan->timesRecycled ++;
+				//scan->timesRecycled ++;
+				break;
 			}
 		}
 	}
@@ -33,14 +33,18 @@ void ScanList::AddScan(int serialNumber)
 
 Scan* ScanList::getScanByNr(int position)
 {
-	if (position => 0 && position < )
+	if (position < 0 || scans == NULL)
 	{
-		
+		return NULL;
 	}
-	else
+	Scan * p = scans;
+	int i = 0;
+	while ((i < position) && (p != NULL))
 	{
-		return null;
+		i++;
+		p = p->getNext();
 	}
+	return p;
 }
 
 bool ScanList::removeScan(int serialNumber)
@@ -48,7 +52,18 @@ bool ScanList::removeScan(int serialNumber)
 	
 }
 
-int ScanList::getTimesRecycled()
+int ScanList::getTimesRecycled(int serialNumber)
 {
-	
+	Scan *scan  = scans;
+	while(true)
+	{
+		if (scan!=NULL)
+		{
+			scan = scan->getNext();
+			if (scan->getSerialNumber() == serialNumber)
+			{
+				return scan->getSerialNumber();
+			}
+		}
+	}
 }
