@@ -15,6 +15,11 @@ int main()
 	int l;
 	bool led_menu_selected = false;
 	//if(run()==1){printf("Fail\n");}
+	libusb_init(NULL);
+
+	h = libusb_open_device_with_vid_pid(NULL, vid, pid);
+	libusb_set_auto_detach_kernel_driver(h,0);
+	libusb_claim_interface(h, 0);
 	initscr();
 	clear();
 	noecho();
@@ -53,10 +58,19 @@ int main()
 			}
 		
 			if(c==10){printInSecondMenu(second_menu,choice);}
-			if(c==10 && choice==1){mvwprintw(second_menu, secondY, secondX, "%s", "Button pressed : ",check(dataOut));}
+			if(c==10 && choice==1){
+				while(strcmp(check(),"X                 ")!=0)
+					{
+						mvwprintw(second_menu, secondY, secondX, "Button pressed : %s",check());
+						printInSecondMenu(second_menu,choice);
+						refresh();
+						print_second_menu(second_menu,1);
+
+					}
+				}
 			if(c == 10 && choice == 2 ){led_menu_selected=true;keypad(menu_win,FALSE);keypad(led_menu,TRUE);leds_menu(led_menu,ledhighlight);refresh();}
 			if(c == 10 && choice == 3 ){doRumble(choices[3]);}
-			if(c == 10 && choice == 4 ){doRumble(choices[1]);}
+			if(c == 10 && choice == 4 ){doRumble(choices[4]);}
 			if(c == 10 && choice == 5){break;}
 		}
 			
