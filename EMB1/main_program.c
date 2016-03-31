@@ -59,7 +59,7 @@ int main()
 		
 			if(c==10){printInSecondMenu(second_menu,choice);}
 			if(c==10 && choice==1){
-				while(strcmp(check(),"X                 ")!=0)
+				while(strcmp(check(),"Back              ")!=0)
 					{
 						mvwprintw(second_menu, secondY, secondX, "Button pressed : %s",check());
 						printInSecondMenu(second_menu,choice);
