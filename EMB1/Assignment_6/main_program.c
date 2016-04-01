@@ -31,6 +31,7 @@ EVENT_t getEvent(void)
 }
 int main()
 {
+
 	WINDOW *menu_win;
 	WINDOW *second_menu;
 	WINDOW *led_menu;
@@ -58,13 +59,16 @@ int main()
 	led_menu = newwin(HEIGHT, (WIDTH*2), (starty),(startx*4));
 	keypad(menu_win, TRUE);
 	refresh();
+	printf("D-Pad with A in the first menu and the keypad and Enter for the led menu\n");
 	print_menu(menu_win, highlight);
 	print_second_menu(second_menu,highlight);
 	scrollok(second_menu,TRUE);
+
 	while(1)
 	{	
 		if(led_menu_selected == false)
 		{
+
 			event = getEvent();
 			usleep(100000);
 			state = STATE_IDLE;
@@ -109,50 +113,40 @@ int main()
 					{
 						while(1)
 						{
-							event = getEvent();
-							usleep(100000);
-							state = STATE_IDLE;
-							switch(state)
+							l = wgetch(led_menu);
+							switch(l)
 							{
-								case STATE_IDLE:
-								switch(event)
-								{	
-									case EVENT_UP:
-									if(ledhighlight == 1){ledhighlight = l_choices;}
-									else{--ledhighlight;}
-									state=STATE_ACTIVE;
+								case KEY_UP:
+									if(ledhighlight == 1)
+										ledhighlight = l_choices;
+									else
+										--ledhighlight;
 									break;
-									case EVENT_DOWN:
-									if(ledhighlight == l_choices){ledhighlight = 1;}
-									else{++ledhighlight;}
-									state=STATE_ACTIVE;
+								case KEY_DOWN:
+									if(ledhighlight == l_choices)
+										ledhighlight = 1;
+										else 
+										++ledhighlight;
 									break;
-									case EVENT_NONE:
-									state = STATE_ACTIVE;
+								case 10:
+									ledchoice = ledhighlight;
 									break;
-									case EVENT_A:
-										ledchoice = ledhighlight;
-										leds_menu(led_menu,ledhighlight);
-										if (ledchoice == 1){ledChange(led[1]);printf("plop\n");}
-										if (ledchoice == 2){ledChange(led[2]);printf("slop\n");}
-										if (ledchoice == 3){ledChange(led[3]);printf("blop\n");}
-										if (ledchoice == 4){led_menu_selected=false;keypad(menu_win,TRUE);keypad(led_menu,FALSE);print_second_menu(second_menu,highlight);refresh(); l= 0;ledchoice=0;break;}//ledmenuOFF
-								}
 							}
-							
-							
+							leds_menu(led_menu,ledhighlight);
+							if (l == 10 && ledchoice == 1){ledChange(led[1]);}
+							if (l == 10 && ledchoice == 2){ledChange(led[2]);}
+							if (l == 10 && ledchoice == 3){ledChange(led[3]);}
+							if(l == 10 && ledchoice == 4){led_menu_selected=false;keypad(menu_win,TRUE);keypad(led_menu,FALSE);print_second_menu(second_menu,highlight);refresh(); l= 0;ledchoice=0;break;}//ledmenuOFF
 						}
+						break;
 					}
 					if(choice == 5){exit(0);}
-					break;	
-				}
-				case STATE_ACTIVE:
-				break;
-			}
-			
-		}
-			
-			
+						break;	
+					}
+					case STATE_ACTIVE:
+						break;
+					}
+				}		
 		
 		
 		print_menu(menu_win, highlight);
@@ -161,5 +155,6 @@ int main()
 	clrtoeol();
 	refresh();
 	endwin();
+
 }
 
