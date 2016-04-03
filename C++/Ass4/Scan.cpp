@@ -7,6 +7,7 @@ Scan::Scan(int number)
 {
 	serialNumber = number;
 	timesRecycled = 0;
+	next = NULL;
 }
 
 Scan::~Scan()

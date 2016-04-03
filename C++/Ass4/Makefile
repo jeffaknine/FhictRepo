@@ -1,6 +1,6 @@
 PROJECT_NAME=ass4
 
-CFLAGS= -g -Wall -Werror -ggdb -O0 -Iproduct 
+CFLAGS= -g -Wall -ggdb -O0 -Iproduct 
 
 SHARED_SOURCES= Scan.cpp ScanList.cpp
 
