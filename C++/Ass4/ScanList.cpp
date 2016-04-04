@@ -2,11 +2,10 @@
 #include "gtest/gtest.h"
 #include <stdio.h>
 using namespace std;
-int number =0;
+
 ScanList::ScanList()
+:scans(NULL)
 {
-	// *scans = new Scan(number);
-	// number++;
 }
 
 ScanList::~ScanList()
@@ -16,54 +15,107 @@ ScanList::~ScanList()
 
 void ScanList::AddScan(int serialNumber)
 {
-	Scan* scan  = scans;
-	while(true)
+	Scan *current, *trailCurrent, *newScan;
+	bool found;
+	newScan = new Scan(serialNumber);
+	newScan->setNext(NULL);
+	if (scans == NULL)
 	{
-		if (scan!=NULL)
-		{
-			scan = scan->getNext();
-			if (scan->getSerialNumber() == serialNumber)
+		scans = newScan;
+	}
+	else{
+		current = scans;
+		found = false;
+		while(current != NULL && !found){
+			if (current->getSerialNumber() >= serialNumber)
 			{
-				//scan->timesRecycled ++;
-				break;
+				found = true;
+			}
+			else{
+				trailCurrent = current;
+				current = current->getNext();
 			}
 		}
+		if (current == scans)
+		{
+			newScan->setNext(scans);
+			scans = newScan;
+		}
+		else{
+			trailCurrent->setNext(newScan);
+			newScan->setNext(current);
+		}
 	}
+	
 }
 
 Scan* ScanList::getScanByNr(int position)
 {
-	if (position < 0 || scans == NULL)
-	{
-		return NULL;
+	// if (position < 0 || scans == NULL)
+	// {
+	// 	return NULL;
+	// }
+	// Scan * p = scans;
+	// int i = 0;
+	// while ((i < position) && (p != NULL))
+	// {
+	// 	i++;
+	// 	p = p->getNext();
+	// }
+	// return p;
+	// int count = 0; /* the index of the node we're currently looking at */
+	// 	Scan *current = scans;
+	// 	while (current != NULL)
+	// 	{
+	// 	   if (count<= position && count < size(scans))
+	// 		  return current;
+	// 		  //return current;
+	// 	   count++;
+	// 	   current = current->getNext();
+	// 	}
+	//    return NULL;
+	int nrOfScans = 0;
+	Scan * scanPointer = scans;
+	while(scanPointer != NULL && position >= nrOfScans && position >= 0){
+		if (nrOfScans == position)
+		{
+			return scanPointer;
+		}
+		scanPointer = scanPointer->getNext();
+		nrOfScans++;
 	}
-	Scan * p = scans;
-	int i = 0;
-	while ((i < position) && (p != NULL))
-	{
-		i++;
-		p = p->getNext();
-	}
-	return p;
+	return NULL;
 }
 
 bool ScanList::removeScan(int serialNumber)
 {
-	
+	Scan* scan;
+	if(scans->getSerialNumber()==serialNumber)
+	{
+		scan = scans->getNext();
+		delete scans;
+		scans = scan;
+		return true;
+	}
+	scan = scans;
+	while(scan->getNext()->getSerialNumber() !=serialNumber && scan !=NULL )
+	{
+		scan=scan->getNext();
+	}
+	if(scan==NULL)
+	{
+		return false;
+	}
+	else
+	{	
+		scan->setNext(scan->getNext());
+		delete scan;
+		return true;
+	}
 }
 
 int ScanList::getTimesRecycled(int serialNumber)
 {
-	Scan *scan  = scans;
-	while(true)
-	{
-		if (scan!=NULL)
-		{
-			scan = scan->getNext();
-			if (scan->getSerialNumber() == serialNumber)
-			{
-				return scan->getSerialNumber();
-			}
-		}
-	}
+	Scan *scan  = getScanByNr(serialNumber);
+	return scan->getTimesRecycled();
 }
