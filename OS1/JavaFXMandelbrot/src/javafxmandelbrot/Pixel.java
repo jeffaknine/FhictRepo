@@ -11,7 +11,7 @@ public class Pixel {
     private final int x;
     private final int y;
     private final Color color;
-
+    
     Pixel(int x, int y, Color c) {
         this.x = x;
         this.y = y;
@@ -25,7 +25,7 @@ public class Pixel {
     public int getY() {
         return y;
     }
-
+    
     public Color getColor ()
     {
         return color;

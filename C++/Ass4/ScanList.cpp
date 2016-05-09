@@ -10,7 +10,12 @@ ScanList::ScanList()
 
 ScanList::~ScanList()
 {
-	delete scans;
+	Scan * p = scans;
+	while(p != NULL){
+		Scan* scanForRemoval = p;
+		p = p -> getNext();
+		delete scanForRemoval;
+	}
 }
 
 void ScanList::AddScan(int serialNumber)
@@ -51,29 +56,6 @@ void ScanList::AddScan(int serialNumber)
 
 Scan* ScanList::getScanByNr(int position)
 {
-	// if (position < 0 || scans == NULL)
-	// {
-	// 	return NULL;
-	// }
-	// Scan * p = scans;
-	// int i = 0;
-	// while ((i < position) && (p != NULL))
-	// {
-	// 	i++;
-	// 	p = p->getNext();
-	// }
-	// return p;
-	// int count = 0; /* the index of the node we're currently looking at */
-	// 	Scan *current = scans;
-	// 	while (current != NULL)
-	// 	{
-	// 	   if (count<= position && count < size(scans))
-	// 		  return current;
-	// 		  //return current;
-	// 	   count++;
-	// 	   current = current->getNext();
-	// 	}
-	//    return NULL;
 	int nrOfScans = 0;
 	Scan * scanPointer = scans;
 	while(scanPointer != NULL && position >= nrOfScans && position >= 0){
@@ -89,29 +71,28 @@ Scan* ScanList::getScanByNr(int position)
 
 bool ScanList::removeScan(int serialNumber)
 {
-	Scan* scan;
-	if(scans->getSerialNumber()==serialNumber)
-	{
-		scan = scans->getNext();
-		delete scans;
-		scans = scan;
-		return true;
-	}
-	scan = scans;
-	while(scan->getNext()->getSerialNumber() !=serialNumber && scan !=NULL )
-	{
-		scan=scan->getNext();
-	}
-	if(scan==NULL)
-	{
-		return false;
-	}
-	else
-	{	
-		scan->setNext(scan->getNext());
-		delete scan;
-		return true;
-	}
+	Scan * scanForDeletion = NULL, *current = NULL;
+    current = scans;
+    if (current->getSerialNumber() == serialNumber)
+    {
+        scanForDeletion = current;
+        scans = scanForDeletion->getNext();
+        delete scanForDeletion;
+        return true;
+    }
+    while(current != NULL){
+        if (current->getSerialNumber() == serialNumber)
+        {
+            scanForDeletion = current;
+            current = scanForDeletion->getNext();
+            delete scanForDeletion;
+            return true;
+        }
+        else{
+            current = current->getNext();
+        }
+    }
+    return false;
 }
 
 int ScanList::getTimesRecycled(int serialNumber)

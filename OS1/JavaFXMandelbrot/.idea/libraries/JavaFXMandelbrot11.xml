@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="JavaFXMandelbrot11">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/run523440687/JavaFXMandelbrot.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

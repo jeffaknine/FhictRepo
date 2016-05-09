@@ -1,5 +1,6 @@
 package javafxmandelbrot;
 
+import java.util.concurrent.CountDownLatch;
 import javafx.scene.paint.Color;
 
 /**
@@ -15,10 +16,13 @@ public class Mandelbrot implements Runnable {
     private final static double INFINITY = 64.;
     private final Tile tile;
     private final PixelManager pm;
+    
+    private CountDownLatch doneSignal;
 
-    Mandelbrot(Tile tile, PixelManager pm) {
+    Mandelbrot(Tile tile, PixelManager pm, CountDownLatch d) {
         this.tile = tile;
         this.pm = pm;
+        this.doneSignal = d; 
     }
 
     private Color convertColor(int k) {
@@ -77,5 +81,7 @@ public class Mandelbrot implements Runnable {
     @Override
     public void run() {
         calculate();
+        doneSignal.countDown();
+        System.out.println("Count: " + doneSignal.getCount());
     }
 }

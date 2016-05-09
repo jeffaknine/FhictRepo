@@ -1,41 +1,29 @@
+#include <iostream>
+#include <cstddef>
 #include "Scan.h"
-#include "gtest/gtest.h"
-#include <stdio.h>
 using namespace std;
 
-Scan::Scan(int number)
-{
+Scan::Scan(int number){
 	serialNumber = number;
 	timesRecycled = 0;
-	next = NULL;
 }
 
-Scan::~Scan()
-{
-	delete next;
+Scan::~Scan(){
 }
 
-int Scan::getSerialNumber()
-{
+int Scan::getSerialNumber(){
 	return serialNumber;
 }
-
-Scan* Scan::getNext()
-{
+Scan* Scan::getNext(){
 	return (Scan*)next;
 }
-
-void Scan::setNext(Scan* nextScan)
-{
-	this->next = nextScan;
+void Scan::setNext(Scan * next){
+	this-> next = next;
+}
+void Scan::recycle(){
+	timesRecycled++;
 }
 
-void Scan::recycle()
-{
-	this->timesRecycled++;
-}
-
-int Scan::getTimesRecycled()
-{
-	return this->timesRecycled;
+int Scan::getTimesRecycled(){
+	return timesRecycled;
 }

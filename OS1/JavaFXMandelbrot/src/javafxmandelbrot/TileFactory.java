@@ -43,7 +43,7 @@ public class TileFactory {
         this.tileWidth = pxmax / this.nrofTiles;
         this.tileHeight = pymax / this.nrofTiles;
     }
-
+    
     public void zoomIn(double x, double y) {
         step *= 2.;
         reCenter(x, y);
@@ -53,22 +53,22 @@ public class TileFactory {
         step /= 2.;
         reCenter(x, y);
     }
-
+    
     public void pan(double x, double y) {
         reCenter(x, y);
     }
-
+    
     public Tile createTile(int i, int j)
     {
         int pxmin = i * tileWidth;  // start pixel of this tile
         int pymin = j * tileHeight;
-
+        
         Tile t = new Tile(pxmin, tileWidth,
-                pymin, tileHeight,
-                ulx + pxmin * step,
-                uly - pymin * step,
-                step
-        );
+                    pymin, tileHeight,
+                    ulx + pxmin * step,
+                    uly - pymin * step,
+                    step
+                    );
         return t;
     }
 }
