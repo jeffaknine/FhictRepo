@@ -33,8 +33,10 @@ public class MovingBallsFX extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
+
+    private ReaderWriterMonitor monitor;
     private Thread threadDraw;
+    private ThreadOverview threadOverview;
     private final Ball[] ballArray = new Ball[10];
     private final Thread[] threadArray = new Thread[10];
     private final CheckBox[] checkBoxArray = new CheckBox[10];
@@ -49,7 +51,7 @@ public class MovingBallsFX extends Application {
     
     @Override
     public void start(Stage primaryStage) {
-       
+       monitor = new ReaderWriterMonitor();
         // Create the scene
         Group root = new Group();
         Scene scene = new Scene(root, maxX, maxY+(4*radius));
