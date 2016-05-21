@@ -51,7 +51,9 @@ public class MovingBallsFX extends Application {
     
     @Override
     public void start(Stage primaryStage) {
-       monitor = new ReaderWriterMonitor();
+        monitor = new ReaderWriterMonitor();
+        threadOverview = new ThreadOverview();
+
         // Create the scene
         Group root = new Group();
         Scene scene = new Scene(root, maxX, maxY+(4*radius));
@@ -87,7 +89,8 @@ public class MovingBallsFX extends Application {
                 new EventHandler<MouseEvent>() {
                     @Override
                     public void handle(MouseEvent event) {
-                        // TODO: set the reader-or-writer-priority to the Monitor
+                        monitor.checkPriority = readerPriority.isSelected();
+
                     }
                 });
 
@@ -136,7 +139,9 @@ public class MovingBallsFX extends Application {
             // Reader selected: new red ball
             Ball b = new Ball(minX, maxX, minCsX, maxCsX, y, Color.RED);
             ballArray[index] = b;
-            Thread t = new Thread(new BallRunnable(b));
+            Thread t = new Thread(new BallRunnable(b,monitor));
+            t.setName(cb.getText());
+            t.setPriority(1);
             threadArray[index] = t;
             circleArray[index].setVisible(true);
             t.start();
@@ -144,10 +149,13 @@ public class MovingBallsFX extends Application {
             // Writer selected: new blue ball
             Ball b = new Ball(minX, maxX, minCsX, maxCsX, y, Color.BLUE);
             ballArray[index] = b;
-            Thread t = new Thread(new BallRunnable(b));
+            Thread t = new Thread(new BallRunnable(b,monitor));
+            t.setName(cb.getText());
+            t.setPriority(1);
             threadArray[index] = t;
             circleArray[index].setVisible(true);
             t.start();
+
         } else {
             // Reader or writer deselected: remove ball
             threadArray[index].interrupt();
