@@ -8,3 +8,12 @@ C:\Users\Arthur\Desktop\Strategy\Strategy\bin\Debug\Strategy.exe
 C:\Users\Arthur\Desktop\Strategy\Strategy\bin\Debug\Strategy.pdb
 C:\Users\Arthur\Desktop\Strategy\Strategy\obj\Debug\Strategy.exe
 C:\Users\Arthur\Desktop\Strategy\Strategy\obj\Debug\Strategy.pdb
+C:\Users\Arthur\FhictRepo\DPR\Week1\Strategy\Strategy\bin\Debug\Strategy.exe.config
+C:\Users\Arthur\FhictRepo\DPR\Week1\Strategy\Strategy\bin\Debug\Strategy.exe
+C:\Users\Arthur\FhictRepo\DPR\Week1\Strategy\Strategy\bin\Debug\Strategy.pdb
+C:\Users\Arthur\FhictRepo\DPR\Week1\Strategy\Strategy\obj\Debug\Strategy.csprojResolveAssemblyReference.cache
+C:\Users\Arthur\FhictRepo\DPR\Week1\Strategy\Strategy\obj\Debug\Strategy.Form1.resources
+C:\Users\Arthur\FhictRepo\DPR\Week1\Strategy\Strategy\obj\Debug\Strategy.Properties.Resources.resources
+C:\Users\Arthur\FhictRepo\DPR\Week1\Strategy\Strategy\obj\Debug\Strategy.csproj.GenerateResource.Cache
+C:\Users\Arthur\FhictRepo\DPR\Week1\Strategy\Strategy\obj\Debug\Strategy.exe
+C:\Users\Arthur\FhictRepo\DPR\Week1\Strategy\Strategy\obj\Debug\Strategy.pdb
