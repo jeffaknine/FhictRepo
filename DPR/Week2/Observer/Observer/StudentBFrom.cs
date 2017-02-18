@@ -19,12 +19,13 @@ namespace Observer
             InitializeComponent();
             this.classroomManager = c;
             c.Attach(this);
+            this.Show();
         }
 
-        public void Update()
+        public new void Update()
         {
             ClassroomState cs = classroomManager.GetState();
-            this.listBoxUpdatesB.Items.Add(cs.TeacherName);
+            this.textBoxTeacher.Text = (cs.TeacherName);
         }
     }
 }

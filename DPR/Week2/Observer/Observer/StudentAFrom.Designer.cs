@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.listBoxUpdatesA = new System.Windows.Forms.ListBox();
+            this.textBoxClasses = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -41,21 +41,20 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Classes";
             // 
-            // listBoxUpdatesA
+            // textBoxClasses
             // 
-            this.listBoxUpdatesA.FormattingEnabled = true;
-            this.listBoxUpdatesA.Location = new System.Drawing.Point(12, 32);
-            this.listBoxUpdatesA.Name = "listBoxUpdatesA";
-            this.listBoxUpdatesA.Size = new System.Drawing.Size(120, 95);
-            this.listBoxUpdatesA.TabIndex = 2;
+            this.textBoxClasses.Location = new System.Drawing.Point(15, 41);
+            this.textBoxClasses.Name = "textBoxClasses";
+            this.textBoxClasses.Size = new System.Drawing.Size(100, 20);
+            this.textBoxClasses.TabIndex = 4;
             // 
             // StudentAFrom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(154, 130);
+            this.Controls.Add(this.textBoxClasses);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listBoxUpdatesA);
             this.Name = "StudentAFrom";
             this.Text = "StudentA";
             this.ResumeLayout(false);
@@ -66,6 +65,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBoxUpdatesA;
+        private System.Windows.Forms.TextBox textBoxClasses;
     }
 }
