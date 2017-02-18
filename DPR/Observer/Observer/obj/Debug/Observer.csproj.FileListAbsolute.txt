@@ -1,0 +1,12 @@
+C:\Users\jeffa\OneDrive\Classes\DPR\Observer\Observer\bin\Debug\Observer.exe.config
+C:\Users\jeffa\class\DPR\Observer\Observer\bin\Debug\Observer.exe.config
+C:\Users\jeffa\class\DPR\Observer\Observer\bin\Debug\Observer.exe
+C:\Users\jeffa\class\DPR\Observer\Observer\bin\Debug\Observer.pdb
+C:\Users\jeffa\class\DPR\Observer\Observer\obj\Debug\Observer.csprojResolveAssemblyReference.cache
+C:\Users\jeffa\class\DPR\Observer\Observer\obj\Debug\Observer.ClassroomManagerFrom.resources
+C:\Users\jeffa\class\DPR\Observer\Observer\obj\Debug\Observer.Properties.Resources.resources
+C:\Users\jeffa\class\DPR\Observer\Observer\obj\Debug\Observer.StudentAFrom.resources
+C:\Users\jeffa\class\DPR\Observer\Observer\obj\Debug\Observer.StudentBFrom.resources
+C:\Users\jeffa\class\DPR\Observer\Observer\obj\Debug\Observer.csproj.GenerateResource.Cache
+C:\Users\jeffa\class\DPR\Observer\Observer\obj\Debug\Observer.exe
+C:\Users\jeffa\class\DPR\Observer\Observer\obj\Debug\Observer.pdb
