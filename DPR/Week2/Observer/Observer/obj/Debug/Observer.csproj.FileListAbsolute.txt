@@ -21,3 +21,14 @@ C:\Users\jeffa\class\DPR\Week2\Observer\Observer\obj\Debug\Observer.Properties.R
 C:\Users\jeffa\class\DPR\Week2\Observer\Observer\obj\Debug\Observer.StudentAFrom.resources
 C:\Users\jeffa\class\DPR\Week2\Observer\Observer\obj\Debug\Observer.StudentBFrom.resources
 C:\Users\jeffa\class\DPR\Week2\Observer\Observer\obj\Debug\Observer.csproj.GenerateResource.Cache
+C:\Users\arthur\FhictRepo\DPR\Week2\Observer\Observer\bin\Debug\Observer.exe.config
+C:\Users\arthur\FhictRepo\DPR\Week2\Observer\Observer\obj\Debug\Observer.exe
+C:\Users\arthur\FhictRepo\DPR\Week2\Observer\Observer\obj\Debug\Observer.pdb
+C:\Users\arthur\FhictRepo\DPR\Week2\Observer\Observer\bin\Debug\Observer.exe
+C:\Users\arthur\FhictRepo\DPR\Week2\Observer\Observer\bin\Debug\Observer.pdb
+C:\Users\arthur\FhictRepo\DPR\Week2\Observer\Observer\obj\Debug\Observer.csprojResolveAssemblyReference.cache
+C:\Users\arthur\FhictRepo\DPR\Week2\Observer\Observer\obj\Debug\Observer.ClassroomManagerFrom.resources
+C:\Users\arthur\FhictRepo\DPR\Week2\Observer\Observer\obj\Debug\Observer.Properties.Resources.resources
+C:\Users\arthur\FhictRepo\DPR\Week2\Observer\Observer\obj\Debug\Observer.StudentAFrom.resources
+C:\Users\arthur\FhictRepo\DPR\Week2\Observer\Observer\obj\Debug\Observer.StudentBFrom.resources
+C:\Users\arthur\FhictRepo\DPR\Week2\Observer\Observer\obj\Debug\Observer.csproj.GenerateResource.Cache
