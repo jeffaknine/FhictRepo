@@ -17,5 +17,16 @@ namespace Factory.Mercedes
         {
             return 1000;
         }
+        public override string ToString()
+        {
+            if (FourbyFour())
+            {
+                return "Mercedes GL that handles " + MaxWeight() + " kilograms and is a 4x4";
+            }
+            else
+            {
+                return "Mercedes GL that handles " + MaxWeight() + " kilograms and isn't a 4x4";
+            }
+        }
     }
 }

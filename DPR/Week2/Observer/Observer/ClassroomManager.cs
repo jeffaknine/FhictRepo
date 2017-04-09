@@ -38,7 +38,7 @@ namespace Observer
             studentObserverList.Remove(student);
         }
 
-        public void Notify()
+        private void Notify()
         {
             foreach (IStudentObserver s in studentObserverList)
             {

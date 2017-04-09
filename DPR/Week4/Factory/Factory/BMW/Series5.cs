@@ -17,5 +17,10 @@ namespace Factory.BMW
         {
             return "Diesel";
         }
+
+        public override String ToString()
+        {
+            return "BMW Series 5 with " + NumberOfSeats().ToString() + " seats \n and running on " + type();
+        }
     }
 }

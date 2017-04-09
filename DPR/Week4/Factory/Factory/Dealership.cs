@@ -8,19 +8,26 @@ namespace Factory
 {
     public class Dealership
     {
-        IFactory factory;
         IFamilyCar familyCar;
         ISportCar sportCar;
         ITruck truck;
+        IFactory bmwFactory;
+        IFactory mercedesFactory;
 
-        public Dealership(IFactory factory)
+        public Dealership()
         {
-            this.factory = factory;
+            bmwFactory = new BMWFactory();
+            mercedesFactory = new MercedesFactory();
         }
-        
-        public IFactory getFactory()
+
+        public IFactory getBMWFactory()
         {
-            return this.factory;
+            return this.bmwFactory;
+        }
+
+        public IFactory getMercedesFactory()
+        {
+            return this.mercedesFactory;
         }
 
         public IFamilyCar getFamilyCar()

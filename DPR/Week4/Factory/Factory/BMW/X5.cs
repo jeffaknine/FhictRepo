@@ -17,5 +17,18 @@ namespace Factory.BMW
         {
             return 500;
         }
+
+        public override string ToString()
+        {
+            if (FourbyFour())
+            {
+                return "BMW X5 that handles " + MaxWeight() + " kilograms and is a 4x4";
+            }
+            else
+            {
+                return "BMW X5 that handles " + MaxWeight() + " kilograms and isn't a 4x4";
+            }
+            
+        }
     }
 }

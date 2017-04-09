@@ -12,18 +12,16 @@ namespace Factory
 {
     public partial class Form1 : Form
     {
-        IFactory bmwFactory;
-        IFactory mercedesFactory;
+    
         Dealership dealership;
 
         public Form1()
         {
             InitializeComponent();
-            bmwFactory = new BMWFactory();
-            mercedesFactory = new MercedesFactory();
             listBoxType.Items.Add("Family car");
             listBoxType.Items.Add("Sport car");
             listBoxType.Items.Add("Truck");
+            dealership = new Dealership();
 
         }
 
@@ -32,7 +30,6 @@ namespace Factory
             listBoxBrand.Items.Clear();
             listBoxBrand.Items.Add("BMW");
             listBoxBrand.Items.Add("Mercedes");
-            
         }
 
         private void listBoxBrand_SelectedIndexChanged(object sender, EventArgs e)
@@ -42,51 +39,39 @@ namespace Factory
             {
                 if (listBoxBrand.SelectedIndex==0)
                 {
-                    dealership = new Dealership(bmwFactory);
-                    dealership.CreateFamilyCar(dealership.getFactory().createFamilyCar());
-                    listBoxInfo.Items.Add(dealership.getFamilyCar().NumberOfSeats().ToString());
-                    listBoxInfo.Items.Add(dealership.getFamilyCar().type().ToString());
+                    dealership.CreateFamilyCar(dealership.getBMWFactory().createFamilyCar());
+                    listBoxInfo.Items.Add(dealership.getFamilyCar().ToString());
                 }
                 if (listBoxBrand.SelectedIndex == 1)
                 {
-                    dealership = new Dealership(mercedesFactory);
-                    dealership.CreateFamilyCar(dealership.getFactory().createFamilyCar());
-                    listBoxInfo.Items.Add(dealership.getFamilyCar().NumberOfSeats().ToString());
-                    listBoxInfo.Items.Add(dealership.getFamilyCar().type().ToString());
+                    dealership.CreateFamilyCar(dealership.getMercedesFactory().createFamilyCar());
+                    listBoxInfo.Items.Add(dealership.getFamilyCar().ToString());
                 }
             }
             if (listBoxType.SelectedIndex == 1)
             {
                 if (listBoxBrand.SelectedIndex == 0)
                 {
-                    dealership = new Dealership(bmwFactory);
-                    dealership.CreateSportCar(dealership.getFactory().createSportCar());
-                    listBoxInfo.Items.Add(dealership.getSportCar().WheelDrive().ToString());
-                    listBoxInfo.Items.Add(dealership.getSportCar().HorsePower().ToString());
+                    dealership.CreateSportCar(dealership.getBMWFactory().createSportCar());
+                    listBoxInfo.Items.Add(dealership.getSportCar().ToString());
                 }
                 if (listBoxBrand.SelectedIndex == 1)
                 {
-                    dealership = new Dealership(mercedesFactory);
-                    dealership.CreateSportCar(dealership.getFactory().createSportCar());
-                    listBoxInfo.Items.Add(dealership.getSportCar().WheelDrive().ToString());
-                    listBoxInfo.Items.Add(dealership.getSportCar().HorsePower().ToString());
+                    dealership.CreateSportCar(dealership.getMercedesFactory().createSportCar());
+                    listBoxInfo.Items.Add(dealership.getSportCar().ToString());
                 }
             }
             if (listBoxType.SelectedIndex == 2)
             {
                 if (listBoxBrand.SelectedIndex == 0)
                 {
-                    dealership = new Dealership(bmwFactory);
-                    dealership.CreateTruck(dealership.getFactory().createTruck());
-                    listBoxInfo.Items.Add(dealership.getTruck().FourbyFour().ToString());
-                    listBoxInfo.Items.Add(dealership.getTruck().MaxWeight().ToString());
+                    dealership.CreateTruck(dealership.getBMWFactory().createTruck());
+                    listBoxInfo.Items.Add(dealership.getTruck().ToString());
                 }
                 if (listBoxBrand.SelectedIndex == 1)
                 {
-                    dealership = new Dealership(mercedesFactory);
-                    dealership.CreateTruck(dealership.getFactory().createTruck());
-                    listBoxInfo.Items.Add(dealership.getTruck().FourbyFour().ToString());
-                    listBoxInfo.Items.Add(dealership.getTruck().MaxWeight().ToString());
+                    dealership.CreateTruck(dealership.getMercedesFactory().createTruck());
+                    listBoxInfo.Items.Add(dealership.getTruck().ToString());
                 }
             }
         }

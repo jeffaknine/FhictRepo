@@ -17,5 +17,9 @@ namespace Factory.BMW
         {
             return "rear";
         }
+        public override string ToString()
+        {
+            return "BMW Z4 has " + HorsePower() + " horse power and is " + WheelDrive() + " wheel drive";
+        }
     }
 }

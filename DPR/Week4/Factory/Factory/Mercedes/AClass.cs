@@ -17,5 +17,9 @@ namespace Factory.Mercedes
         {
             return "Hybrid";
         }
+        public override string ToString()
+        {
+            return "Mercedes A Class with " + NumberOfSeats() + " number of seats and is a " + type();
+        }
     }
 }

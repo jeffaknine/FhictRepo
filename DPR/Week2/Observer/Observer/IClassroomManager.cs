@@ -10,7 +10,6 @@ namespace Observer
     {
         void Attach(IStudentObserver student);
         void Detach(IStudentObserver student);
-        void Notify();
         ClassroomState GetState();
     }
 }

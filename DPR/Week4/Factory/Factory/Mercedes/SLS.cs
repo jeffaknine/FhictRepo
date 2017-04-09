@@ -17,5 +17,10 @@ namespace Factory.Mercedes
         {
             return "Rear";
         }
+
+        public override string ToString()
+        {
+            return "Mercedes SLS has " + HorsePower() + " horse power and is " + WheelDrive() + " wheel drive";
+        }
     }
 }

@@ -10,5 +10,6 @@ namespace Factory
     {
         int NumberOfSeats();
         String type();
+        String ToString();
     }
 }
