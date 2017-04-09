@@ -6,22 +6,23 @@ using System.Threading.Tasks;
 
 namespace IteratorDesignPatter
 {
-    class ChannelSelector : IChannelIterator
+    class RadioChannelSelector : IChannelIterator
     {
         IChannelFrequencies aggregate = null;
         int currentId = 0;
 
-        public ChannelSelector(IChannelFrequencies aggregate)
+        public RadioChannelSelector(IChannelFrequencies aggregate)
         {
             this.aggregate = aggregate;
         }
+
 
         public string Next
         {
             get
             {
                 currentId += 1;
-                if (currentId<aggregate.Count)
+                if (currentId < aggregate.Count)
                 {
                     return aggregate[currentId];
                 }
@@ -44,10 +45,10 @@ namespace IteratorDesignPatter
                 }
                 catch (Exception)
                 {
-                    currentId = aggregate.Count-1;
+                    currentId = aggregate.Count - 1;
                     return aggregate[currentId];
                 }
-                
+
             }
         }
     }

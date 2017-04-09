@@ -43,11 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HomeTheater.cs" />
     <Compile Include="IChannelFrequencies.cs" />
     <Compile Include="ChannelSelector.cs" />
     <Compile Include="IChannelIterator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RadioChannel.cs" />
+    <Compile Include="RadioChannelSelector.cs" />
     <Compile Include="TunedChannel.cs" />
   </ItemGroup>
   <ItemGroup>

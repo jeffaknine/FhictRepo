@@ -10,34 +10,24 @@ namespace IteratorDesignPatter
     {
         static void Main(string[] args)
         {
-            TunedChannel aggr = new TunedChannel();
-
-            aggr[0] = "GolfChannel";
-            aggr[1] = "NewsChannel";
-            aggr[2] = "TennisChannel";
-            aggr[3] = "BasketballChannel";
-            aggr[4] = "FootballChannel";
-            aggr[5] = "BaseballChannel";
-            aggr[6] = "CrossfitChannel";
-            aggr[7] = "CyclingChannel";
-            aggr[8] = "RugbyChannel";
-            aggr[9] = "AmericanFootballChannel";
-
-            IChannelIterator iter = aggr.CreateIterator();
+            HomeTheater home = new HomeTheater();
             Console.WriteLine(" This is a TV remote control"+
-                                "\n Type the 'n' key followed by enter to get the next channel and 'p' for the previous one");
+                                "\n Type the 'n' key followed by enter to get the next channel and 'p' for the previous one"+
+                                "\n Type the 's' key to switch to the radio and 's' to switch back to tv");
 
             while(true)
             {
                 string key = Console.ReadLine();
-                if (key == "n")
+                if(key == "s")
                 {
-                    Console.WriteLine(iter.Next);
+                    home.Switch();
+                    Console.WriteLine("switched to"+home.Get());
                 }
-                if (key == "p")
+                else
                 {
-                    Console.WriteLine(iter.Previous);
-                }                
+                    string s = home.GetNext(key);
+                    Console.WriteLine("Current Channel is : " + s); 
+                }           
             }
             
         }
