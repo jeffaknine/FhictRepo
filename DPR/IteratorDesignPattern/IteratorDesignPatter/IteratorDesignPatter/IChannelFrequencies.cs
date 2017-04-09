@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IteratorDesignPatter
 {
-    interface IChannelFrequencies
+    public interface IChannelFrequencies
     {
         int Count { get;}
         string this[int itemIndex] { get; set; }

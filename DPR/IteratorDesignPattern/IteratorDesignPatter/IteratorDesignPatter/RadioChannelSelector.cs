@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IteratorDesignPatter
 {
-    class RadioChannelSelector : IChannelIterator
+    public class RadioChannelSelector : IChannelIterator
     {
         IChannelFrequencies aggregate = null;
         int currentId = 0;

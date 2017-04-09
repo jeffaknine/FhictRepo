@@ -11,9 +11,10 @@ namespace IteratorDesignPatter
         static void Main(string[] args)
         {
             HomeTheater home = new HomeTheater();
+            home.Switch();
             Console.WriteLine(" This is a TV remote control"+
                                 "\n Type the 'n' key followed by enter to get the next channel and 'p' for the previous one"+
-                                "\n Type the 's' key to switch to the radio and 's' to switch back to tv");
+                                "\n Type the 's' key to switch between radio and tv");
 
             while(true)
             {
@@ -21,7 +22,7 @@ namespace IteratorDesignPatter
                 if(key == "s")
                 {
                     home.Switch();
-                    Console.WriteLine("switched to"+home.Get());
+                    Console.WriteLine("switched to "+home.Get());
                 }
                 else
                 {

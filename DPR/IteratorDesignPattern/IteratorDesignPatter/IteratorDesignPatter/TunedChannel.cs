@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IteratorDesignPatter
 {
-    class TunedChannel : IChannelFrequencies
+    public class TunedChannel : IChannelFrequencies
     {
 
         List<string> values = null;

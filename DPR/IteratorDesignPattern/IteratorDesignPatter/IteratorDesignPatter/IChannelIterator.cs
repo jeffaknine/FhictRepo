@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IteratorDesignPatter
 {
-    interface IChannelIterator
+    public interface IChannelIterator
     {
         string Next { get; }
         string Previous { get; }
